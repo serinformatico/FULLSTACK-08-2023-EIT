@@ -1,0 +1,40 @@
+SHORTCODES VSC
+**************
+
+
+WINDOWS:
+    Aumentar tamaño de fuente: CTRL +
+    Reducir tamaño de fuente: CTRL -
+    Abrir la terminal: CTRL Ñ
+    Abrir un archivo: CTRL+P
+    Buscar dentro de un archivo: CTRL F
+    Buscar y reemplazar dentro de un archivo: CTRL H
+    Buscar en todos archivos: CTRL SHIFT F
+    Buscar y reemplazar en todos archivos: CTRL SHIFT H
+    Agregar una identación: CTRL ¿
+    Quitar una identación: CTRL '
+    Duplicar línea: SHIFT ALT DOWN
+    Comentar una sola línea: CTRL }
+    Comentar múltiples líneas (tiene que seleccionar un bloque): SHIFT ALT A
+    Agregar un cursor extra (presionar D tantas veces se precise): CTRL D
+    Guardar cambios: CTRL S
+    Guardar automáticamente: File->Auto Save
+
+
+LINUX:
+    Aumentar tamaño de fuente: CTRL +
+    Reducir tamaño de fuente: CTRL -
+    Abrir la terminal: No tiene
+    Abrir un archivo: CTRL+P
+    Buscar dentro de un archivo: CTRL F
+    Buscar y reemplazar dentro de un archivo: CTRL H
+    Buscar en todos archivos: CTRL SHIFT F
+    Buscar y reemplazar en todos archivos: CTRL SHIFT H
+    Agregar una identación: CTRL SHIFT }
+    Quitar una identación: CTRL SHIFT {
+    Duplicar línea: SHIFT ALT DOWN
+    Comentar una sola línea: CTRL SHIFT 7
+    Comentar múltiples líneas (tiene que seleccionar un bloque): CTRL SHIFT A
+    Agregar un cursor extra (presionar D tantas veces se precise): CTRL D
+    Guardar cambios: CTRL S
+    Guardar automáticamente: File->Auto Save

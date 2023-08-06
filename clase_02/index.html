@@ -1,0 +1,135 @@
+<!-- Esta etiqueta establece el tipo de documento -->
+<!DOCTYPE html>
+
+<!-- Esta etiqueta <html> establece el idioma y región de mi página web -->
+<html lang="es-AR">
+    <head>
+        <!-- Esta etiqueta <meta> establece la codificación de caracteres -->
+        <meta charset="UTF-8" />
+
+        <!-- Esta etiqueta <meta> establece la descripción de mi página web que utilizan los motores de búsqueda -->
+        <meta name="description" content="Curso de Full Stack" />
+
+        <!-- Esta etiqueta <meta> establece las palabras claves de mi página web que utilizan los motores de búsqueda -->
+        <meta name="keywords" content="curso full stack html css javascript" />
+
+        <!-- Esta etiqueta <meta> establece el autor de mi página web -->
+        <meta name="author" content="Sergio Regalado Alessi" />
+
+        <!-- Esta etiqueta <title> establece el título de mi página web -->
+        <title>Mi app</title>
+    </head>
+
+    <body>
+        <!-- Este contenedor representa semánticamente al encabezado -->
+        <header>
+            <h1>Título Principal</h1>
+
+            <!-- Este contenedor representa semánticamente al centro de navegación -->
+            <nav>
+                <!-- Vínculo relativo -->
+                <a href="./conctact.html" target="_self">Contacto</a>
+
+                <!-- Vínculo de Localización -->
+                <a href="#articulo5">Articulo 5</a>
+            </nav>
+        </header>
+
+        <!-- Esta etiqueta dibuja una línea horizontal -->
+        <hr>
+
+        <main>
+            <!-- Este contenedor representa semánticamente a la primera sección -->
+            <section>
+                <!-- Este contenedor representa semánticamente al primer artículo -->
+                <article>
+                    <h2>Título de Artículo 1</h2>
+                    <p>
+                        <!-- Las etiquetas <strong> y <em> tienen valor semántico -->
+                        Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit.<br>
+                        Velit, libero et itaque possimus voluptatum, placeat commodi amet,<br>
+                        cum accusantium <em>sed</em> quos voluptatibus asperiores. Ab laborum saepe<br>
+                        reprehenderit iure culpa voluptate?<br>
+                    </p>
+                </article><br><br><br>
+
+                <!-- Este contenedor representa semánticamente al segundo artículo -->
+                <article>
+                    <h2>Título Secundario</h2>
+                        <!-- Las etiquetas <b>, <i> y <u> NO tienen valor semántico -->
+                        Lorem <b>ipsum</b> dolor sit amet consectetur adipisicing elit.<br>
+                        Velit, libero et itaque possimus voluptatum, placeat commodi amet,<br>
+                        cum accusantium <i>sed</i> quos voluptatibus asperiores. Ab laborum saepe<br>
+                        reprehenderit iure <u>culpa</u> voluptate?<br>
+                </article><br><br><br>
+
+                <!-- Este contenedor representa semánticamente al tercer artículo -->
+                <article>
+                    <h2>Título de Artículo 3 - Vínculo absoluto</h2>
+                    <p>
+                        <!-- Vínculo absoluto -->
+                        <a href="https://www.educacionit.com/" target="_blank" title="Abre la web de EduaciónIT">Educación IT</a>
+                        Lorem sit amet consectetur adipisicing elit. Velit, libero et itaque possimus voluptatum,<br>
+                        placeat commodi amet, cum accusantium sed quos voluptatibus asperiores. Ab laborum saepe<br>
+                        reprehenderit iure culpa voluptate?<br>
+                    </p>
+                </article><br><br><br>
+
+                <!-- Este contenedor representa semánticamente al cuarto artículo -->
+                <article>
+                    <h2>Título de Artículo 4</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Velit, libero et itaque possimus voluptatum, placeat commodi amet,<br>
+                        cum accusantium sed quos voluptatibus asperiores. Ab laborum saepe<br>
+                        reprehenderit iure culpa voluptate?<br>
+                    </p>
+                </article><br><br><br>
+
+                <!-- Este contenedor representa semánticamente al quinto artículo -->
+                <article id="articulo5">
+                    <h2>Título de Artículo 5 - Localización</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Velit, libero et itaque possimus voluptatum, placeat commodi amet,<br>
+                        cum accusantium sed quos voluptatibus asperiores. Ab laborum saepe<br>
+                        reprehenderit iure culpa voluptate?<br>
+                    </p>
+                </article><br><br><br>
+            </section>
+
+            <!-- Este contenedor representa semánticamente a la segunda sección -->
+            <section>
+                <h3>Título de Listas</h3>
+                <!-- Este contenedor div no es semántico -->
+                <div>
+                    <ol title="Lista ordenada">
+                        <li>item A</li>
+                        <li>item B</li>
+                        <li>item C</li>
+                    </ol>
+                </div>
+
+                <!-- Este contenedor div no es semántico -->
+                <div>
+                    <ul title="Lista desordenada">
+                        <li>item A</li>
+                        <li>item B</li>
+                        <li>item C</li>
+                    </ul>
+                </div>
+            </section><br><br><br>
+        </main>
+
+        <!-- Este contenedor representa semánticamente a un apartado -->
+        <aside>
+            <p>Publicidades</p>
+        </aside>
+
+        <!-- Este contenedor representa semánticamente al pié de página -->
+        <footer>
+            <p>&copy;2023 Todos los derechos reservados</p>
+        </footer>
+
+    </body>
+</html>

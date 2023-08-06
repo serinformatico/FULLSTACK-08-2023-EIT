@@ -5,6 +5,7 @@
 - Node.js v18.17.0
 - GIT v2.34.1
 - IDE - Visual Studio Code v1.80.1
+- Microsoft Windows o Linux
 
 ### Instrucciones:
 - Abrí una terminal CLI en **C:\\** de Windows o en el **/home** de Linux y ejecuta las siguientes instrucciones:
