@@ -1,0 +1,105 @@
+/* Importar una fuente (tipografía) externa */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* Importar una fuente (tipografía) local */
+@font-face {
+    font-family: 'Barriecito';
+    src: url('/FULLSTACK-08-2023-EIT/clase_03/fonts/Barriecito-Regular.ttf') format("truetype");
+}
+
+/* El asterisco es un selector universal */
+* {
+    /* Esta propiedad impide que los contenedores hijos desborden al
+       contenedor padre cuando se usa padding (padre) */
+    box-sizing: border-box;
+}
+
+/* Elemento raíz (root) */
+html {
+    /* rem: es una unidad relativa a la fuente de la raíz */
+    font-size: 1rem;
+}
+
+/* Selector de etiqueta individual */
+body {
+    /* Esta propiedad cambia el color del fondo de la página web */
+    background-color: beige;
+
+    /* em: es una unidad relativa a la fuente de contenedor padre */
+    font-size: 1em;
+}
+
+/* Selector de etiqueta grupal */
+h1,
+h2 {
+    /* Esta propiedad cambia el color del texto */
+    color: yellow;
+
+    /* Esta propiedad cambia el color del fondo del texto */
+    background-color: gray;
+
+    /* Aquí se establece el uso de la fuente tipográfica (importada localmente) */
+    font-family: 'Barriecito', cursive;
+
+    /* Esta propiedad alinea horizontalmente el texto al centro */
+    text-align: center;
+}
+
+/* Selector de etiqueta descendente */
+div p {
+    color: white;
+
+    /* Esta propiedad cambia el grosor del texto */
+    font-weight: bold;
+
+    /* Esta propiedad cambia el estilo del texto */
+    font-style: italic;
+
+    /* Esta propiedad cambia el tipo de fuente tipográfica del texto (sistema)*/
+    font-family: 'Times New Roman', Times, serif;
+
+    /* Esta propiedad coloca todo el texto en mayúsculas */
+    text-transform: uppercase;
+
+    /* Esta propiedad alinea horizontalmente el texto a la izquierda */
+    text-align: left;
+}
+
+p {
+    color: brown;
+
+    /* Aquí se establece el uso de la fuente tipográfica (importada externamente) */
+    font-family: 'Dancing Script', cursive;
+
+    /* Esta propiedad coloca la inicial de cada palabra en mayúscula */
+    text-transform: capitalize;
+
+    /* Esta propiedad justifica horizontalmente el texto */
+    text-align: justify;
+
+    /* Esta propiedad coloca un margen externo de 10px */
+    margin: 10px;
+}
+
+h3 {
+    /* Esta propiedad subraya el texto */
+    text-decoration: underline solid;
+}
+
+div {
+    background-color: brown;
+
+    /* Esta propiedad ajusta la altura al máximo del contenido (texto) */
+    height: max-content;
+
+    /* Esta propiedad ajusta la anchura al 30% */
+    width: 30%;
+
+    /* Esta propiedad coloca un margen interno de 5px */
+    padding: 5px;
+}
+
+div div {
+    background-color: red;
+    width: 100%;
+}
