@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* *********** PSEUDO-CLASES *********** */
+
+/* Esto se dispara al colocar el puntero de mouse por encima del elemento */
+a:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Esto se dispara cuando el elemento es un vículo visitado */
+a:visited {
+    color: gray;
+}
+
+/* Esto se dispara cuando el elemento es un vículo */
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+/* Selector grupal de pseudo-clases.
+   Esto se dispara al hacer clic encima del elemento */
+h1:active,
+a:active {
+    background-color: lightgray;
+}
+
+h1 {
+    color: brown;
+}
+h1:hover {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/* *************** BORDES ************** */
+
+/* Esto subraya el elemento <p> con la propiedad border-bottom*/
+section p {
+    border-bottom: 3px double blue;
+    width: max-content;
+}
+
+section figure p {
+    border: none;
+    width: fit-content;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+section small {
+    border: 7px outset;
+}
+section div {
+    height: 250px;
+    width: 250px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: beige;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    border-top: 2px solid red;
+
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 25%;
+}
+
+
+/* ******* VIÑETAS PERSONALIZADAS ****** */
+
+ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-image: url("./images/icon-item.png");
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+
+/* ************** IMAGENES ************* */
+
+header img {
+    height: auto;
+    width: 250px;
+    border: 2px solid gray;
+    border-radius: 10%;
+}
+
+main {
+    background-image: url("./images/gatito.jpg");
+    background-size: 200px;
+    background-repeat: repeat space ;
+}
+
+figure img {
+    height: auto;
+    width: 250px;
+}
+
+
+/* **************** OTROS ************** */
+
+header {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+figure {
+    background-color: black;
+    color: white;
+    width: 250px;
+    padding-bottom: 7px;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+}
+
