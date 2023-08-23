@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bootcamp de Full Stack" />
+    <meta name="keywords" content="bootcamp full stack html css javascript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+    <title>Mi APP</title>
+
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+
+    <header>
+        <h1>Formulario HTML</h1>
+    </header>
+
+    <main>
+        <section>
+            <h3>Mi Form</h3>
+            <form action="endpoint.js" method="post">
+                <div>
+                    <!-- El elemento "label" se usa para definir el nombre de un elemento del form -->
+                    <label for="id-fullname">Nombre y apellido</label>
+                    <!-- El elemento "input" de tipo "text" se usa para textos cortos -->
+                    <input type="text" name="fullname" id="id-fullname" minlength="5" maxlength="35" placeholder="Ingresa tu nombre y apellido" required>
+                </div>
+
+                <div>
+                    <label for="id-email">Correo electrónico</label>
+                    <!-- El elemento "input" de tipo "email" se usa para correos electrónicos -->
+                    <input type="email" name="email" id="id-email" minlength="10" maxlength="50" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+
+                <div>
+                    <label for="id-password">Contraseña</label>
+                    <!-- El elemento "input" de tipo "password" se usa para contraseñas -->
+                    <input type="password" name="password" id="id-password" minlength="8" maxlength="12" placeholder="Ingresa tu contraseña" required>
+                </div>
+
+                <div>
+                    <label for="id-age">Edad</label>
+                    <!-- El elemento "input" de tipo "number" se usa para números -->
+                    <input type="number" name="age" id="id-age" min="18" max="120" step="1" placeholder="Ingresa tu edad">
+                </div>
+
+                <div>
+                    <label for="id-civil-status0">Estado civil</label>
+                    <!-- El elemento "input" de tipo "radio" se usa para marcar una opción de un grupo de opciones -->
+                    <input type="radio" name="civil-status" id="id-civil-status0" value="0" checked>SOLTERO
+                    <input type="radio" name="civil-status" id="id-civil-status1" value="1">CASADO
+                    <input type="radio" name="civil-status" id="id-civil-status2" value="2">DIVORCIADO
+                    <!-- civil-state: 0 -->
+                </div>
+
+                <div>
+                    <label for="id-preference1">Preferencias</label>
+                    <!-- El elemento "input" de tipo "checkbox" se usa para marcar múltiples opciones de un grupo de opciones -->
+                    <input type="checkbox" name="preference1" id="id-preference1" checked>Caminar
+                    <input type="checkbox" name="preference2" id="id-preference2">Correr
+                    <input type="checkbox" name="preference3" id="id-preference3">Nadar
+                    <!-- preference1: 1 -->
+                    <!-- preference2: 0 -->
+                    <!-- preference3: 0 -->
+                </div>
+
+                <div>
+                    <label for="id-country">País</label>
+                    <!-- El elemento "select" se usa para seleccionar una opción de un desplegable de opciones -->
+                    <select name="country" id="id-country">
+                        <option value="ARGENTINA" selected>ARGENTINA</option>
+                        <option value="COLOMBIA">COLOMBIA</option>
+                        <option value="URUGUAY">URUGUAY</option>
+                    </select>
+                    <!-- country: ARGENTINA -->
+                </div>
+
+                <div>
+                    <label for="id-favorite-color">Color favorito</label>
+                    <!-- El elemento "select" con "multiple" se usa para seleccionar múltiples opciones de una lista de opciones -->
+                    <select name="favorite-color" id="id-favorite-color" multiple>
+                        <option value="ROJO">ROJO</option>
+                        <option value="BLANCO" selected>BLANCO</option>
+                        <option value="VERDE">VERDE</option>
+                        <option value="NEGRO">NEGRO</option>
+                    </select>
+                    <!-- civil-state: 1 -->
+                </div>
+
+                <div>
+                    <label for="id-photo">Fotografía</label>
+                    <!-- El elemento "input" de tipo "file" se usa para subir archivos -->
+                    <input type="file" name="photo" id="id-photo">
+                </div>
+
+                <div>
+                    <label for="id-observations">Observaciones</label>
+                    <!-- El elemento "textarea" se usa para textos largos (párrafo) -->
+                    <textarea name="observations" id="id-observations" cols="40" rows="3" maxlength="90" placeholder="Ingresa tus observaciones"></textarea>
+                </div>
+
+                <div>
+                    <!-- El elemento "input" de tipo "submit" se usa para envíar lo datos del form (botón) -->
+                    <input type="submit" value="Enviar datos">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

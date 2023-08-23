@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    border-bottom: 5px double black;
+}
+
+h3 {
+    margin: 5px;
+    color: #4a148c;
+}
+
+form {
+    width: fit-content;
+    max-width: max-content;
+    padding: 10px;
+    margin: 5px;
+    background-color: #e1bee7;
+    border: 3px groove;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+select,
+textarea {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    background-color: #f3e5f5;
+    border: 1px solid #4a148c;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+input[type=file] {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    /* Esta propiedad impide cambiar el tamaño del area */
+    resize: none;
+}
+
+input[type=submit] {
+    width: 100%;
+    min-width: max-content;
+    color: white;
+    background-color: #7b1fa2;
+}
+
+footer {
+    text-align: center;
+}
