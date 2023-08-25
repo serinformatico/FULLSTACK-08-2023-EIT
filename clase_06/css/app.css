@@ -1,0 +1,136 @@
+/*
+    PESO DE LAS REGLAS CSS
+    1. Estilos declarados con !important, estos prevalecerán sobre el resto de los
+       estilos. Si un elemento HTML tiene más de un estilo declarado como importante,
+       prevalecerá el de mayor peso según las reglas que se esten aplicando.
+    2. Reglas de estilos:
+        A. Selectores de ID (#)
+        B. Selectores de CLASS (.)
+        C. Selectores de TAG (tag-html)
+
+    Nota: Si dos reglas tienen el mismo peso, prevalecerá la última regla declarada.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Merienda:wght@300&display=swap');
+
+@font-face {
+    font-family: mi-fuente;
+    src: url("../fonts/spicy_potatos.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ********** SELECTORES DE ETIQUETAS ********** */
+body {
+    background-image: url("../images/back-image.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    margin: 0;
+    padding: 0.5em;
+    background-color: #795548;
+}
+
+section {
+    padding: 10px;
+}
+
+article {
+    min-width: min-content;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #5d4037;
+    border-radius: 12px / 12px;
+    color: #4e342e;
+    text-transform: capitalize;
+
+    /* Este color tiene transparencia y equivale a #d7ccc8 */
+    background-color: rgba(215, 204, 200, 0.7);
+}
+
+footer {
+    padding-top: 10px;
+    border-top: 1px solid #5d4037;
+    text-align: center;
+}
+
+/* Selector TAG + Pseudo-clase */
+article:hover {
+    /* Este color no tiene transparencia y equivale a #efebe9 */
+    background-color: hsl(20, 16%, 93%);
+}
+
+
+/* *********** SELECTORES DE CLASES ************ */
+.logo {
+    width: 3em;
+    height: 3.5em;
+    margin: 0 1%;
+    padding-top: 1%;
+}
+
+.titulo-principal {
+    min-width: max-content;
+    margin: 0;
+    color: white;
+    font-family: 'Bungee', cursive;
+    font-weight: 100;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.sub-titulo-primario {
+    font-size: 2em;
+    color: #4e342e;
+}
+
+.sub-titulo-secundario {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4e342e;
+}
+
+.sub-titulo-secundario-imagen {
+    width: 100%;
+}
+
+.parrafo {
+    color: #4e342e;
+}
+
+.vinculo {
+    color: #4e342e;
+    font-style: italic;
+    text-decoration: none;
+}
+
+/* Selector CLASS + Pseudo-clase */
+.vinculo:hover {
+    font-weight: bold;
+}
+
+.articulo-destacado {
+    font-family: mi-fuente, cursive;
+}
+
+
+/* ******* SELECTORES DE IDENTIFICADORES ******* */
+#articulo2 {
+    /* Este color no tiene transparencia y equivale a #4e342e */
+    border: 5px double rgb(78, 52, 46);
+}
+
+/* Selector ID + Pseudo-clase */
+#articulo2:hover {
+    /* Este color no tiene transparencia y equivale a #bcaaa4 */
+    background-color: hsl(15, 15%, 69%);
+}
