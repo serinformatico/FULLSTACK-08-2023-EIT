@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor1 {
+    /* Se establece el elemento HTML como un contenedor flexible */
+    display: flex;
+}
+
+.item {
+    color: white;
+    border: 1px solid black;
+    background-color: brown;
+}
+
+#id-item3 {
+    /* Por medio de una margen de tamaño autómatico, se le indica al
+    item3 que se ubique en la parte derecha de un contenedor flexible */
+    margin-left: auto;
+}
+
+.contenedor2 {
+    height: 250px;
+    width: 100%;
+    padding: 1px;
+    border: 2px dashed black;
+    background-color: beige;
+
+    /* Se establece el elemento HTML como un contenedor flexible */
+    display: flex;
+
+    /* Se indica la dirección en la que se ubican los ítems. Se usa
+    el valor row|column (row es por defecto) */
+    flex-direction: row;
+    /*  */
+
+    /* Se especifica que los ítems se desplieguen cuando son demasiados
+    para el ancho. Se usa el valor wrap|nowrap (nowrap es por defecto) */
+    flex-wrap: wrap;
+
+    /* Se alinean los ítems sobre el eje principal. Se usa el valor
+    flex-start|center|flex-end|space-between|space-around|space-evenly
+    (flex-start es por defecto) */
+    justify-content: space-evenly;
+
+    /* Se ajustan las líneas dentro del contenedor flex cuando hay espacio
+    extra en el eje transversal. Se usa el valor flex-start|center|flex-end|
+    space-between|space-around|space-evenly|stretch (flex-start es por defecto) */
+    align-content: space-around;
+
+    /* Se alinean los ítems sobre el eje cruzado. Se usa el valor
+    flex-start|center|flex-end|stretch|baseline (flex-start es por defecto) */
+    align-items: center;
+}
+
+.card {
+    font-size: 1.5em;
+    color: white;
+    border: 1px solid black;
+    background-color: brown;
+}
+
+#id-card01 {
+    /* Se indica el orden de un ítem en relación con el resto de ítems dentro del
+    mismo contenedor */
+    order: 2;
+
+    /* Se especifica el factor de crecimiento de un ítem.  */
+    flex-grow: 2;
+
+    /* Se ajusta el ítem sobre la líea el eje cruzado del contenedor. Se usa el
+    valor flex-start|center|flex-end|stretch|baseline (flex-start es por defecto)
+    (no visible con align-content) */
+    align-self: flex-end;
+}
+
+#id-card02 {
+    order: 1;
+    flex-grow: 1;
+}
+
+#id-card03 {
+    order: 3;
+}
+
+#id-card04 {
+    order: 4;
+}
+
+#id-card05 {
+    order: 5;
+    margin-top: 15px;
+}
+
+.texto-centrado {
+    text-align: center;
+}

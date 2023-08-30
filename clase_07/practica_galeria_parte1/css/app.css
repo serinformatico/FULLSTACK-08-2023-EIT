@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #66717E;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    padding: 1vw;
+}
+
+aside {
+    order: 1;
+    flex-basis: 14vw;
+    margin-right: 1vw;
+    color: white;
+    background-color: #383B53;
+}
+
+main {
+    order: 2;
+    flex-basis: 85vw;
+    background-color: #D4D6B9;
+}
+
+aside,
+main {
+    padding: 1vw;
+    border-radius: 0.5vw / 0.5vw
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    /* Se debe tener en cuenta que el contenedor padre "main" tiene un ancho de 85vw.
+    A esto hay que restarle los margenes internos (padding 1vw*2) + el margen derecho
+    (margin 1vw) + la separación que se desea entre cards (2vw*2) = 78vw (78vw/3=26vw) */
+    flex-basis: 26vw;
+    margin-bottom: 1.5vw;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 1vw / 1vw
+}
+
+footer {
+    text-align: center;
+    background-color: #DBD5B2;
+}

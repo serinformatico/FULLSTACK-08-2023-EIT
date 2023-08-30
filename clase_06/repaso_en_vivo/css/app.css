@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+@font-face {
+    font-family: "super boys";
+    src: url("../fonts/super-boys.ttf");
+}
+
+h1 {
+    color: green;
+}
+
+p {
+    color: yellow;
+    background-color: gray;
+}
+
+.titulo-principal {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: 1000;
+    font-style: oblique;
+    text-decoration: underline solid;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitulo1 {
+    font-family: 'Tilt Prism', cursive;
+}
+
+.subtitulo2 {
+    font-family: "super boys", cursive;
+}
+
+.color {
+    color: brown;
+}
+
+.parrafo-destacado {
+    color: white;
+    background-color: black;
+}
+
+#id-parrafo-2 {
+    color: #ff0000;
+}
+
+.color-hexadecimal {
+    color: #ff0000;
+}
+
+.color-notacion-rgba {
+    background-color: black;
+    color: rgb(229, 115, 115, 0.8);
+}
+
+.color-notacion-hsla {
+    background-color: black;
+    color: hsla(8, 50%, 75%, 0.5);
+}
