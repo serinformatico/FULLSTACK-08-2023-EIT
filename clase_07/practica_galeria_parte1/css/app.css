@@ -19,7 +19,7 @@ header {
 
 aside {
     order: 1;
-    flex-basis: 14vw;
+    width: 14vw;
     margin-right: 1vw;
     color: white;
     background-color: #383B53;
@@ -27,7 +27,7 @@ aside {
 
 main {
     order: 2;
-    flex-basis: 85vw;
+    width: 85vw;
     background-color: #D4D6B9;
 }
 
@@ -57,7 +57,7 @@ ul {
     /* Se debe tener en cuenta que el contenedor padre "main" tiene un ancho de 85vw.
     A esto hay que restarle los margenes internos (padding 1vw*2) + el margen derecho
     (margin 1vw) + la separación que se desea entre cards (2vw*2) = 78vw (78vw/3=26vw) */
-    flex-basis: 26vw;
+    width: 26vw;
     margin-bottom: 1.5vw;
 }
 

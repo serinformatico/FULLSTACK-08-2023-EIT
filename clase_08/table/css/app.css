@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 5vw;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: beige;
+    width: 60vw;
+}
+
+tr:hover {
+    color: white;
+    background-color: gray;
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+th,
+td {
+    width: 25%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.td-number {
+    width: 5%;
+}
+
+.td-product {
+    width: 45%;
+}

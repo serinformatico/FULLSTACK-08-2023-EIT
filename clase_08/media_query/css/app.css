@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 50vh;
+    width: 20%;
+    margin-bottom: 1vh;
+    border: 1px solid black;
+    font-size: 1.5em;
+    color: white;
+    background-color: brown;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+
+/* ********************** MEDIA QUERIES ********************** */
+
+/* La ventana puede tener un ancho igual o inferior que 1200px */
+@media (max-width: 1200px) {
+    .card {
+        width: 25%;
+        background-color: #D1CAA1;
+    }
+}
+
+/* La ventana puede tener un ancho igual o inferior que 992px */
+@media (max-width: 992px) {
+    .card {
+        width: 33%;
+        background-color: #66717E;
+    }
+}
+
+/* La ventana puede tener un ancho igual o inferior que 768px */
+@media (max-width: 768px) {
+    .card {
+        width: 50%;
+        background-color: #383B53;
+    }
+}
+
+/* La ventana puede tener un ancho igual o inferior que 480px */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        margin: 0 1vh 1vh 1vh;
+        background-color: #32213A;
+    }
+}

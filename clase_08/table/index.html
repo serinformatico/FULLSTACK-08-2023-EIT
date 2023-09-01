@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack" />
+    <meta name="keywords" content="bootcamp full stack html css javascript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+    <title>CSS App</title>
+
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Uso de Tablas</h1>
+    </header>
+
+    <main>
+        <section>
+            <table>
+                <caption>Lista de Precios</caption>
+                <tr>
+                    <th colspan="2">Producto</th>
+                    <th>Color</th>
+                    <th>valor</th>
+                </tr>
+                <tr>
+                    <td class="td-number">1</td>
+                    <td class="td-product">Remera</td>
+                    <td>Verde</td>
+                    <td>$2500</td>
+                </tr>
+                <tr>
+                    <td class="td-number" rowspan="2">2</td>
+                    <td class="td-product"rowspan="2">Campera</td>
+                    <td>Negro</td>
+                    <td>$9500</td>
+                </tr>
+                <tr>
+                    <td>Azul</td>
+                    <td>$7200</td>
+                </tr>
+                <tr>
+                    <td class="td-number">3</td>
+                    <td class="td-product">Pantalón</td>
+                    <td>Blanco</td>
+                    <td>$5000</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
