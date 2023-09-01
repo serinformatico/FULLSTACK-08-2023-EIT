@@ -74,7 +74,7 @@ footer {
 
 /* ********************** MEDIA QUERIES ********************** */
 
-/* La ventana puede tener un ancho igual o inferior que 1024px */
+/* Breakpoint: La ventana puede tener un ancho igual o inferior que 1024px */
 @media (max-width: 1024px) {
     .card {
         width: 32%;
@@ -85,7 +85,7 @@ footer {
     }
 }
 
-/* La ventana puede tener un ancho igual o inferior que 768px */
+/* Breakpoint: La ventana puede tener un ancho igual o inferior que 768px */
 @media (max-width: 768px) {
     .contenedor {
         flex-direction: column;
@@ -105,7 +105,7 @@ footer {
     }
 }
 
-/* La ventana puede tener un ancho igual o inferior que 576px */
+/* Breakpoint: La ventana puede tener un ancho igual o inferior que 576px */
 @media (max-width: 576px) {
     .contenedor {
         flex-direction: column;
