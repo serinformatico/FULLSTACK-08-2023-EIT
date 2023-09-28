@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.rectangulo1,
+.rectangulo2 {
+    height: 100px;
+    width: 200px;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid brown;
+    float: left;
+}
+
+.rectangulo2 {
+    float: right;
+}
+
+.articulo2 {
+    height: 300px;
+    width: 300px;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid brown;
+    background-color: beige;
+    clear: both;
+}
+
+.figura {
+    height: 300px;
+    width: 300px;
+    margin: 3px;
+    padding: 3px;
+    border: 2px solid brown;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.figura p {
+    text-align: justify;
+}
+
+.imagen1,
+.imagen2 {
+    width: 50%;
+    margin: 2vw 0 0 2vw;
+    float: right;
+}
+
+.imagen2 {
+    float: left;
+}

@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.figura1 {
+    height: 200px;
+    width: 300px;
+    margin: 3vw;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0 7vw;
+
+    /* La siguiente propiedad, recorta la imagen al tamaño del
+    contenedor padre. Además, permite agregar barras de scroll */
+    overflow: hidden;
+
+    /* Estas propiedades centran la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.figura2 {
+    height: 200px;
+    width: 300px;
+    margin: 3vw;
+    padding: 1vw;
+    border: 5px groove black;
+    border-radius: 3vw / 3vw;
+    overflow: auto;
+}
+
+.figura1 img,
+.figura2 img {
+    height: fit-content;
+    width: 400px;
+}
+
+.figura2 img {
+    border-radius: 1vw / 1vw;
+}

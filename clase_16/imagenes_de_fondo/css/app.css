@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    color: white;
+}
+
+.imagen-estatica-de-fondo {
+    height: fit-content;
+    width: 100vw;
+    background-image: url("../images/img01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+article {
+    height: 35vh;
+    width: 25vw;
+    background-color: rgba(82, 77, 49, 0.5);
+}
+
+.imagen-de-fondo {
+    height: 60vh;
+    width: 100vw;
+    padding: 2vw;
+    background-image: url("../images/img02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    /*
+        La imágen inicia (esquina superior-izquierda) desde el borde, margen interno o contenido
+        background-origin: border-box | padding-box | content-box;
+        Mas info: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background-origin
+    */
+
+    /*
+        Recorta la imágen (los 4 lados) en relación al borde, padding o contenido
+        background-clip: border-box | padding-box | content-box;
+        Mas info: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_background-clip
+    */
+}
+
+.imagen-de-fondo2 {
+    height: 60vh;
+    width: 100vw;
+    padding: 2vw;
+    background-image: url("../images/img03.png"), url("../images/img04.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: contain, cover;
+    background-position: left, center center;
+    background-blend-mode: darken, normal;
+}
+
+.color-gradiente-de-fondo {
+    height: 60vh;
+    width: 100vw;
+    background-image: linear-gradient(217deg, #66717E, #32213A, #D1CAA1 70%);
+
+    /* Variantes de gradientes */
+    /* background-image: conic-gradient(#32213A, #D1CAA1 70%); */
+    /* background-image: radial-gradient(#32213A, #D1CAA1 70%); */
+    /* background-image: repeating-linear-gradient(#32213A, #D1CAA1 10%); */
+    /* background-image: repeating-radial-gradient(#32213A, #D1CAA1 10%); */
+}
+
+main section h3 {
+    color: white;
+}
