@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h3:hover {
+    color: brown;
+}
+
+h3:active {
+    color: green;
+}
+
+a:link {
+    color: black;
+    text-decoration: underline double;
+}
+
+a:visited {
+    color: salmon;
+}
+
