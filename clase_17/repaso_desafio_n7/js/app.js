@@ -35,9 +35,9 @@ function buscarCoincidencias(datosDelIntegrante1, datosDelIntegrante2) {
     }
 }
 
-let datos               = document.querySelectorAll("dd");
-let datosDelIntegrante1 = [datos[0], datos[1], datos[2], datos[3]];
-let datosDelIntegrante2 = [datos[4], datos[5], datos[6], datos[7]];
+const datos               = document.querySelectorAll("dd");
+const datosDelIntegrante1 = [datos[0], datos[1], datos[2], datos[3]];
+const datosDelIntegrante2 = [datos[4], datos[5], datos[6], datos[7]];
 
 function ejecutar() {
     let integrante1 = getValor(datosDelIntegrante1);
