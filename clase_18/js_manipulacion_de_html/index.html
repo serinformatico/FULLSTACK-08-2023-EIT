@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack" />
+    <meta name="keywords" content="bootcamp full stack html css javascript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+    <title>CSS App</title>
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS - Clase 18</h1>
+        <h2>Javascript - Manipulación de HTML</h2>
+    </header>
+
+    <main>
+        <section id="id-section1">
+            <h3>Manipulación de Estilos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+
+        <section id="id-section2">
+            <h3>Manipulación de Contenidos</h3>
+            <p></p>
+            <small></small>
+            <form action="backend.js" method="POST">
+                <div>
+                    <label for="id-nombre">Nombre</label>
+                    <input type="text" id="id-nombre" name="nombre">
+                </div>
+                <div>
+                    <input type="checkbox" id="id-chequeo" name="chequeo">
+                    <label for="id-chequeo">Chequeo</label>
+                </div>
+                <div>
+                    <input type="radio" id="id-opcion1" name="opciones">
+                    <label for="id-opcion1">Opción 1</label>
+                    <input type="radio" id="id-opcion2" name="opciones">
+                    <label for="id-opcion1">Opción 2</label>
+                </div>
+                <div>
+                    <label for="id-pais">País</label>
+                    <select id="id-pais" name="pais">
+                        <option value="1">Argentina</option>
+                        <option value="2">Colombia</option>
+                        <option value="3">Paraguay</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="reset" value="Restaurar">
+                </div>
+            </form>
+        </section>
+
+        <section id="id-section3">
+            <h3>Manipulación de Atributos</h3>
+            <p>JavaScript es increible!!!</p>
+
+            <form action="backend.js" method="POST">
+                <div>
+                    <label for="id-edad">Edad</label>
+                    <input type="number" id="id-edad" name="edad" placeholder="Ingresa tu edad">
+                </div>
+            </form>
+        </section>
+
+        <section id="id-section4">
+            <h3>Manipulación de Eventos</h3>
+            <p>Hola Mundo</p>
+            <button>Cambiar color del párrafo</button>
+        </section>
+
+        <section id="id-section5">
+            <h3>Manipulación de Elementos</h3>
+            <div>Texto actual</div>
+            <button id="id-agregar">Agregar texto</button>
+            <button id="id-modificar">Modificar texto</button>
+            <button id="id-eliminar">Eliminar primer elemento</button>
+            <button id="id-eliminar-todo">Eliminar todos los elemento</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 Javascript</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
