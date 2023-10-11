@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Para que se cumpla: debe ser el primer elemento a nivel
+general y coincidir con el tipo */
+.mi-seccion h3:first-child {
+    color: brown;
+}
+
+/* Para que se cumpla: debe ser el último elemento a nivel
+general y coincidir con el tipo */
+.mi-seccion p:last-child {
+    color: red;}
+
+/* Para que se cumpla: el elemento debe ser el primero de su tipo */
+.mi-seccion p:first-of-type {
+    background-color: beige;
+}
+
+/* Para que se cumpla: el elemento debe ser el último de su tipo */
+.mi-seccion h3:last-of-type {
+    background-color: lightblue;
+}
+
+/* Para que se cumpla: los elementos deben coincidir con el tipo
+y la posiciones a nivel general deben ser múltiplo de 3 (de arriba
+para abajo) */
+.mi-seccion p:nth-child(3n) {
+    text-decoration: underline;
+}
+
+/* Para que se cumpla: los elementos deben coincidir con el tipo
+y la posiciones a nivel general deben ser múltiplo de 3 (de abajo
+para arriba) */
+.mi-seccion p:nth-last-child(3n) {
+    text-decoration: underline dotted;
+}
+
+/* Para que se cumpla: los elementos de su tipo deber estar en las
+posiciones que son múltiplo de 3 (de arriba para abajo)*/
+.mi-seccion h3:nth-of-type(odd) {
+    text-shadow: 1px 1px 2px blue;
+}
+
+/* Para que se cumpla: los elementos de su tipo deber estar en las
+posiciones que son múltiplo de 3 (de abajo para arriba)*/
+.mi-seccion h3:nth-last-of-type(even) {
+    text-shadow: 1px 1px 3px green;
+}

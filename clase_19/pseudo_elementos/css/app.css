@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section p::before {
+    color: blue;
+    content: "Texto inicial desde CSS - ";
+}
+
+section p::after {
+    color: brown;
+    content: " - Texto final desde CSS";
+}
+
+.contenido::before {
+    color: blue;
+    content: "Contenido inicial desde CSS ";
+}
+
+.contenido::after {
+    color: brown;
+    content: "Contenido final desde CSS";
+}
