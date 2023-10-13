@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+header,
+nav,
+aside,
+main,
+footer {
+    padding: 0.5vw;
+    border-radius: 0.25vw / 0.25vw;
+    box-shadow: 0.125vw 0.125vw 0.25vw rgb(0, 0, 0, 0.4);
+}
+
+body {
+    /* En un contenedor grid, es importante la definición de su tamaño */
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+
+    grid-template-areas:
+        "header  header header header"
+        "navbar  navbar navbar navbar"
+        "sidebar main   main   main"
+        "footer  footer footer footer";
+
+    /* La propiedad grid-template-areas, reuiere la definición de columnas y filas */
+    grid-template-rows: max-content max-content auto max-content;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 0.5vw;
+}
+
+header {
+    background-image: linear-gradient(#AB526B, #BCA297 90%);
+
+    /* En la propiedad grid-template-areas, es determinante definir el grid-area */
+    grid-area: header;
+}
+
+nav {
+    background-color: #BCA297;
+
+    /* En la propiedad grid-template-areas, es determinante definir el grid-area */
+    grid-area: navbar;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 1vw;
+}
+
+nav form {
+    margin-left: auto;
+}
+
+aside {
+    background-color: #C5CEAE;
+
+    /* En la propiedad grid-template-areas, es determinante definir el grid-area */
+    grid-area: sidebar;
+}
+
+main {
+    overflow: auto;
+    background-color: #F4EBC3;
+
+    /* En la propiedad grid-template-areas, es determinante definir el grid-area */
+    grid-area: main;
+}
+
+main section h3 {
+    padding: 1vw 0;
+    text-shadow: 0.125vw 0.125vw 0.5vw rgb(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    background-color: #F0B49E;
+
+    /* En la propiedad grid-template-areas, es determinante definir el grid-area */
+    grid-area: footer;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5vw;
+}
+
+.gallery img {
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.5vw / 0.5vw;
+}
+
+.gallery img:hover {
+    border: 0.125vw solid white;
+    box-shadow: 0.125vw 0.125vw 0.5vw rgb(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 992px) {
+    body {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "header  header"
+            "navbar  navbar"
+            "sidebar main"
+            "footer  footer";
+    }
+
+    nav ul {
+        gap: 2vw;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "navbar"
+            "sidebar"
+            "main"
+            "footer";
+    }
+
+    nav {
+        padding: 1vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav form {
+        margin-left: 0;
+        align-self: stretch;
+        display: flex;
+        gap: 1vw;
+    }
+
+    nav form input:first-of-type {
+        width: 70%;
+    }
+
+    nav form input:last-of-type {
+        width: 30%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

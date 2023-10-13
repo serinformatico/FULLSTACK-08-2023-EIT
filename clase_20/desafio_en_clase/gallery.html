@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack" />
+    <meta name="keywords" content="bootcamp full stack html css javascript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+    <title>Mi App</title>
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS - Clase 20</h1>
+        <h2>Grid Galería - Desafío en Clase</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./gallery.html">Galería</a></li>
+            <li><a href="#">Contacto</a></li>
+
+            <form action="backend.js" method="POST">
+                <input type="text" id="id-texto-buscador" placeholder="Ingresa la palabra buscada">
+                <input type="button" value="Buscar">
+            </form>
+        </ul>
+    </nav>
+
+    <aside>
+        <h3>Titulo de sidebar</h3>
+        <dl>
+            <dt>Contenido</dt>
+            <dd><a href="#id-section1">Mis coches A</a></dd>
+            <dd><a href="#id-section2">Mis coches B</a></dd>
+        </dl>
+    </aside>
+
+    <main>
+        <section>
+            <h3 id="id-section1">Mis coches A</h3>
+            <div class="gallery">
+                <img class="card" src="./images/img01.jpg" alt="Coche deportivo 1">
+                <img class="card" src="./images/img02.jpg" alt="Coche deportivo 2">
+                <img class="card" src="./images/img03.jpg" alt="Coche deportivo 3">
+                <img class="card" src="./images/img04.jpg" alt="Coche deportivo 4">
+                <img class="card" src="./images/img05.jpg" alt="Coche deportivo 5">
+                <img class="card" src="./images/img06.jpg" alt="Coche deportivo 6">
+                <img class="card" src="./images/img07.jpg" alt="Coche deportivo 7">
+                <img class="card" src="./images/img08.jpg" alt="Coche deportivo 8">
+                <img class="card" src="./images/img09.jpg" alt="Coche deportivo 9">
+                <img class="card" src="./images/img10.jpg" alt="Coche deportivo 10">
+            </div>
+        </section>
+
+        <section>
+            <h3 id="id-section2">Mis coches B</h3>
+            <div class="gallery">
+                <img class="card" src="./images/img11.jpg" alt="Coche deportivo 11">
+                <img class="card" src="./images/img12.jpg" alt="Coche deportivo 12">
+                <img class="card" src="./images/img13.jpg" alt="Coche deportivo 13">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 Desafío en clase</p>
+    </footer>
+</body>
+
+</html>

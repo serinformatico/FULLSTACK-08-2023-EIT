@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack" />
+    <meta name="keywords" content="bootcamp full stack html css javascript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+    <title>CSS App</title>
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS - Clase 21</h1>
+        <h2>Menú con Desplegable</h2>
+    </header>
+
+    <nav>
+        <!-- Menú Principal -->
+        <ul class="navbar">
+            <li class="navbar-item"><a href="#">Inicio</a></li>
+            <li class="navbar-item">
+                <a href="#">Galería</a>
+                <!-- Menú desplegable de primer nivel -->
+                <ul>
+                    <li class="navbar-item"><a href="#">Album 1</a></li>
+                    <li class="navbar-item"><a href="#">Album 2</a></li>
+                    <li class="navbar-item">
+                        <a class="navbar-item" href="#">Otros</a>
+                        <!-- Menú desplegable de segundo nivel -->
+                        <ul>
+                            <li class="navbar-item"><a href="#">Album 1</a></li>
+                            <li class="navbar-item"><a href="#">Album 2</a></li>
+                            <li class="navbar-item"><a href="#">Album 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar-item"><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Título de la sección</h3>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 Javascript</p>
+    </footer>
+</body>
+
+</html>
