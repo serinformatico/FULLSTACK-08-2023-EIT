@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: fit-content;
+    width: 400px;
+    border: 1px dashed black;
+
+    position: relative;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+}
+
+.card:first-of-type {
+    background-color: salmon;
+    position: absolute;
+
+    /*No funciona con el valor static */
+    z-index: 2;
+}
+
+.card:nth-of-type(2) {
+    background-color: orange;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    /*No funciona con el valor static */
+    z-index: 1;
+}
+
+.card:nth-of-type(3) {
+    background-color: brown;
+}
+
+.card:last-of-type {
+    background-color: rgb(65, 35, 35);
+}
