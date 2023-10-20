@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+}
+
+.card:first-of-type {
+    background-color: salmon;
+
+    /* Esto mueve el elemento en X-Y. Por defecto es 0-0 */
+    transform: translate(10px, 10px);
+}
+
+.card:nth-of-type(2) {
+    background-color: orange;
+
+    /* Esto redimensiona el elemento en X-Y. Por defecto es 1-1 */
+    transform: scale(0.5, 0.5);
+}
+
+.card:nth-of-type(3) {
+    background-color: brown;
+
+    /* Esto gira el elemento sobre su eje */
+    transform: rotate(7deg);
+}
+
+.card:nth-of-type(4) {
+    background-color: green;
+
+    /*
+        Esto sesga el elemento en X-Y. Por defecto es 1-1
+        transform: skew(10deg, 20deg);
+    */
+
+    transform: skewX(10deg);
+    /* transform: skewY(10deg); */
+}
+
+.card:nth-of-type(5) {
+    background-color: violet;
+
+    /* Esto cambia el eje del elemento en X-Y-Z. Por defecto es 0-0-0 */
+    transform-origin: 100px 100px 0;
+}
+
+.card:last-of-type {
+    background-color: gray;
+    transform: rotate(-5deg) rotateY(25deg) rotateY(25deg);
+}

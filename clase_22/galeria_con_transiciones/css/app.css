@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+    display: flex;
+    gap: 1px;
+}
+
+section figure {
+    width: 0;
+    overflow: hidden;
+    opacity: 0.7;
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+    transition: opacity flex-grow;
+    transition-duration: 1s;
+}
+
+section figure:hover {
+    opacity: 1;
+    flex-grow: 12;
+}
+
+section figure:hover img {
+    width: 100%;
+}
+
+section figure img {
+    height: 50vw;
+}

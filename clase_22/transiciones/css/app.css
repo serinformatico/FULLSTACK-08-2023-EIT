@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+}
+
+.card:first-of-type {
+    background-color: salmon;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+.card:first-of-type:hover {
+    background-color: blue;
+}
+
+.card:nth-of-type(2) {
+    background-color: orange;
+    transition-property: background-color, border-radius;
+    transition-duration: 4s, 2s;
+}
+
+.card:nth-of-type(2):hover {
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.card:nth-of-type(3) {
+    background-color: brown;
+    transition: transform 2s ease-in;
+}
+
+.card:nth-of-type(3):hover {
+    transform: rotate(360deg);
+}
+
+.card:nth-of-type(4) {
+    background-color: green;
+    transition-property: background-color, transform;
+    transition-duration: 3s, 2s;
+    transition-delay: 1s;
+}
+
+.card:nth-of-type(4):hover {
+    background-color: blue;
+    transform: rotate(360deg);
+}
+
+.card:nth-of-type(5) {
+    background-color: violet;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+.card:nth-of-type(5):hover {
+    transform: translate(25px);
+}
+
+.card:last-of-type {
+    background-color: gray;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+.card:last-of-type:hover {
+    transform: scale(2, 0.5);
+}

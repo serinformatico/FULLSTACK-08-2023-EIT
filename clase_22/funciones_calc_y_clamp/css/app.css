@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    margin: 1vw;
+}
+
+.card:first-of-type {
+    width: calc(100% - (2*30px) - 10vw);
+    background-color: salmon;
+}
+
+.card:nth-of-type(2) {
+    background-color: orange;
+
+    /* Esto equivale a width: 50%; min-width: 200px; */
+    width: max(50%, 200px);
+
+    /* Se puede aplicar a toda propiedad que requiera valores numéricos */
+    font-size: max(1rem, 3vw);
+}
+
+.card:nth-of-type(3) {
+    background-color: brown;
+
+    /* Esto equivale a width: 50%; max-width: 400px; */
+    width: min(50%, 400px);
+
+    /* Se puede aplicar a toda propiedad que requiera valores numéricos */
+    font-size: min(3vw, 24px);
+}
+
+.card:last-of-type {
+    background-color: violet;
+
+    /* Esto equivale a width: 50%; min-width: 200px; max-width: 400px; */
+    width: clamp(200px, 50%, 400px);
+
+    /* Se puede aplicar a toda propiedad que requiera valores numéricos */
+    font-size: clamp(1rem, 3vw, 24px);
+}
