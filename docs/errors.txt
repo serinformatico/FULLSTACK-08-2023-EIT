@@ -1,0 +1,13 @@
+ERRORS
+******
+
+1.  Error: VSC: Error: Could not register service workers: TypeError: Failed to register a ServiceWorker for scope.
+    Solución para LINUX y WINDOWS:
+        Presionar dentro VSC: Ctrl + P
+        Escribir en el input: >Clear Editor History
+        Presionar la tecla "Enter"
+    Motivo: "Live Sass Compalier" debe regenerarse al crear o cambiar de proyecto.
+
+2.  Error:
+    Solución para LINUX:
+    Motivo:

@@ -1,0 +1,28 @@
+{
+    "window.zoomLevel": 2,
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "explorer.confirmDelete": false,
+    "workbench.startupEditor": "none",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.enabled": false,
+    "editor.detectIndentation": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "cSpell.languageSettings": [],
+    "editor.formatOnPaste": true,
+    "open-in-browser.default": "chrome",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "livePreview.portNumber": 3010,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+@mixin figure($height, $width: 100px, $color: red) {
+    height: $height;
+    width: $width;
+    background-color: $color;
+}

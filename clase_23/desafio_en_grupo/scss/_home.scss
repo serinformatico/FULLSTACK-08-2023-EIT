@@ -1,0 +1,21 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+.cover {
+    height: fit-content;
+    width: 400px;
+    padding: 2vw;
+    border: 2px solid var.$colorPrimary;
+
+    .cover__title {
+        color: var.$colorPrimary;
+    }
+
+    .cover__text {
+        @include mix.image();
+    }
+
+    .cover__image {
+        @include mix.image();
+    }
+}

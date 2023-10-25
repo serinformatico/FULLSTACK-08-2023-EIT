@@ -1,0 +1,33 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+// Variable privada (No se puede acceder desde afuera del módulo)
+$_color4: lightgreen;
+
+h1 {
+    color: $_color4;
+}
+
+main {
+    // Variable local
+    $color3: yellow;
+
+    .subtitulo {
+        color: $color3;
+        text-decoration: underline solid black;
+    }
+
+    .cuadrado1 {
+        background-color: gray;
+        border: 3px solid nth(var.$colores, 2);
+    }
+
+    .cuadrado2 {
+        @include mix.figure(50px, $color: blue);
+        border-radius: 15px;
+    }
+
+    .cuadrado3 {
+        @include mix.figure(250px, 100px, violet);
+    }
+}
