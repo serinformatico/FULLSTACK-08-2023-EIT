@@ -1,0 +1,41 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+.home {
+    .cover {
+        margin: 2vw;
+
+        // CSS: Selector combinador de hermanos adyacentes.
+        .cover__title1:hover+p {
+            color: var.$colorPrimary;
+        }
+
+        // CSS: Selector combinador general de hermanos.
+        .cover__title2:hover~p {
+            color: var.$colorPrimary;
+        }
+
+        .cover__image {
+            width: 100px;
+
+            // SASS: Selector de padre.
+            // En este caso, el padre sería el elemento "section".
+            &:hover {
+                border: 2px solid blue;
+            }
+        }
+
+        //CSS: Selector Combinador de hijos directo.
+        >div {
+            height: 50px;
+            width: 100px;
+            padding: 3vw;
+            background-color: blue;
+        }
+    }
+
+    .shape {
+        @include mix.figure("rectangulo");
+        @include mix.color(3);
+    }
+}

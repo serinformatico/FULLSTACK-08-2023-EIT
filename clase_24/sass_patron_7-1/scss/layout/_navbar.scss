@@ -1,0 +1,6 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.navbar {
+    background-color: var.$colorDanger;
+}

@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.header {
+    .header__title {
+        font-family: "Super Plants", serif;
+        color: var.$colorDanger;
+    }
+
+    .header__subtitle {
+        color: var.$colorDanger;
+    }
+}

@@ -1,0 +1,9 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.gallery {
+    .cover {
+        color: white;
+        background-color: var.$colorBackground-3;
+    }
+}

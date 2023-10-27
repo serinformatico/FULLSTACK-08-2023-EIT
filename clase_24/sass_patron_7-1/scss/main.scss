@@ -1,0 +1,8 @@
+@use "./abstracts/mixins";
+@use "./abstracts/variables";
+@use "./layout/header";
+@use "./layout/navbar";
+@use "./base/reset";
+@use "./base/typography";
+@use "./pages/home";
+@use "./pages/gallery";

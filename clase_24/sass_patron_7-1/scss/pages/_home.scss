@@ -1,0 +1,8 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.home {
+    .cover {
+        background-color: var.$colorBackground-1;
+    }
+}

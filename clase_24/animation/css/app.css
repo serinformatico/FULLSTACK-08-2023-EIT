@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+}
+
+.card:first-of-type {
+    background-color: gray;
+    animation-name: change-border-element;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+}
+
+@keyframes change-border-element {
+    from { border-radius: 0; }
+    to { border-radius: 100%; }
+}
+
+.card:nth-of-type(2) {
+    background-color: brown;
+    animation-name: change-color-element;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes change-color-element {
+    0% { background-color: brown; }
+    33% { background-color: orange; }
+    66% { background-color: green; }
+    100% { background-color: blue; }
+}
+
+.card:nth-of-type(3) {
+    background-color: salmon;
+    animation-name: rotate-element;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate-element {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
+
+.card:last-of-type {
+    background-color: violet;
+}
+
+.separator-top,
+.separator-bottom {
+    width: 300px;
+    margin: 3px;
+}
+
+.separator-top {
+    border-top: solid 10px black;
+    border-right: solid 10px transparent;
+    border-left: solid 10px transparent;
+}
+
+.separator-bottom {
+    border-right: solid 10px transparent;
+    border-left: solid 10px transparent;
+    border-bottom: solid 10px black;
+}

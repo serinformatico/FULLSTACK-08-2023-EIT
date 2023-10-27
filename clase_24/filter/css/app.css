@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    font-size: small;
+    color: brown;
+    background-image: url("../images/img01.png");
+    background-size: cover;
+}
+
+.card:nth-of-type(2) {
+    filter: blur(1px);
+}
+
+.card:nth-of-type(3) {
+    filter: brightness(0.1);
+}
+
+.card:nth-of-type(4) {
+    filter: contrast(200%);
+}
+
+.card:nth-of-type(5) {
+    filter: drop-shadow(16px 16px 20px blue);
+}
+
+.card:nth-of-type(6) {
+    filter: grayscale(75%);
+}
+
+.card:nth-of-type(7) {
+    filter: invert(75%);
+}
+
+.card:nth-of-type(8) {
+    filter: opacity(25%);
+}
+
+.card:nth-of-type(9) {
+    filter: saturate(30%);
+}
+
+.card:nth-of-type(10) {
+    filter: sepia(60%);
+}
+
+.card:nth-of-type(11) {
+    filter: contrast(200%) drop-shadow(3px 3px red) drop-shadow(-3px -3px blue);
+}
