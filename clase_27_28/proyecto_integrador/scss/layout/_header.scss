@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.header {
+    grid-area: header;
+
+    &__title {
+        font-family: Super Plants;
+        color: var.$textColorPrimary;
+    }
+}

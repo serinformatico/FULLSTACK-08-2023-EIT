@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Esta página web es una tienda que corresponde al proyecto Integrador del Bootcamp de Full Stack">
+    <meta name="keywords" content="tienda, proyecto, integrador, bootcamp, full stack, store, proyect, integrative">
+    <meta name="author" content="Sergio Regalado Alessi">
+    <title>Mi Tienda</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body class="home">
+    <header class="header">
+        <img class="header__logo" src="./images/logo.png" alt="x">
+        <h1 class="header__title">Inicio</h1>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="navbar__item navbar__item--active" href="./index.html">Inicio</a></li>
+                <li><a class="navbar__item" href="./about.html">Nosotros</a></li>
+                <li><a class="navbar__item" href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section section--slider">
+            <div class="slider">
+                <div class="slider__one">
+                    <h5 class="slider__title">Título de primer slide</h5>
+                    <img class="slider__image" src="./images/slides/slide01.jpg" alt="Muro y mostrador de una cafetería">
+                </div>
+                <div class="slider__two">
+                    <h5 class="slider__title">Título de segundo slide</h5>
+                    <img class="slider__image" src="./images/slides/slide02.jpg" alt="Una taza de café">
+                </div>
+                <div class="slider__three">
+                    <h5 class="slider__title">Título de tercer slide</h5>
+                    <img class="slider__image" src="./images/slides/slide03.jpg" alt="Preparación de café">
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--products">
+            <div>
+                Formulario de búsqueda
+                Vínculo para crear un nuevo producto
+            </div>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/img01.jpg" alt="x">
+                <h4 class="card__title">Título de primer producto</h4>
+                <p class="card__text card__text--short">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit, deserunt perferendis.
+                    Architecto quas nesciunt ex placeat eaque aut neque expedita. Excepturi.
+                </p>
+                <div>
+                    <span class="card__price">1150,00</span>
+                    <button class="button button--sm button--confirm">Agregar</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger">Quitar</button>
+                </div>
+            </figure>
+            <figure class="card card--product">
+                <img class="card__image" src="./images/gallery/img02.jpg" alt="x">
+                <h4 class="card__title">Título de segundo producto</h4>
+                <p class="card__text card__text--short">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit, deserunt perferendis.
+                    Architecto quas nesciunt ex placeat eaque aut neque expedita. Excepturi.
+                </p>
+                <div>
+                    <span class="card__price">550,00</span>
+                    <button class="button button--sm button--confirm">Agregar</button>
+                    <span class="card__count">0</span>
+                    <button class="button button--sm button--danger">Quitar</button>
+                </div>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_text">&copy;2023 Javascript</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

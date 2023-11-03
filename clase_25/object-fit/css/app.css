@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 250px;
+    border: 2px dotted black;
+}
+
+.card img {
+    /* Es determinante la declaración del alto y ancho al 100%
+    para que la propiedad object-fit funcione correctamente. */
+    height: 100%;
+    width: 100%;
+}
+
+.card:first-of-type img {
+    /* Estira el tamaño de la imagen para cubrir la superficie
+       del contenedor padre */
+    object-fit: fill;
+}
+
+.card:nth-of-type(2) img {
+    /* Redimensiona el tamaño de la imagen para cubrir la superficie
+       del contenedor padre */
+    object-fit: cover;
+    object-position: top;
+}
+
+.card:nth-of-type(3) img {
+    /* Ajusta el tamaño de la imagen para cubrir la superficie del
+       contenedor padre sin perder la relación de aspecto */
+    object-fit: contain;
+    object-position: 5px 10px;
+}
+
+.card:nth-of-type(4) img {
+    object-fit: none;
+}

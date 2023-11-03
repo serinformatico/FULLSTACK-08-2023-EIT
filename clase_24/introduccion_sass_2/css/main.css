@@ -11,30 +11,36 @@ ul {
 .home .cover {
   margin: 2vw;
 }
-.home .cover .cover__title1 + p {
+.home .cover .cover__title1:hover + p {
   color: brown;
 }
-.home .cover .cover__title2 ~ p {
-  text-decoration: underline;
+.home .cover .cover__title2:hover ~ p {
+  color: brown;
 }
-.home .cover .cover__image:last-of-type {
-  width: 25%;
+.home .cover .cover__image {
+  width: 100px;
 }
-.home .cover .cover__image:last-of-type:hover {
-  border: 2px solid black;
+.home .cover .cover__image:hover {
+  border: 2px solid blue;
+}
+.home .cover > div {
+  height: 50px;
+  width: 100px;
+  padding: 3vw;
+  background-color: blue;
 }
 .home .shape {
   height: 100px;
   border: 3px solid gray;
+  height: 100px;
   width: 150px;
-  margin: 2vw;
 }
 .home .shape div:nth-of-type(1) {
-  color: rgb(50, 25, 50);
+  color: rgb(70, 25, 140);
 }
 .home .shape div:nth-of-type(2) {
-  color: rgb(100, 50, 255);
+  color: rgb(140, 50, 255);
 }
 .home .shape div:nth-of-type(3) {
-  color: rgb(150, 75, 255);
+  color: rgb(210, 75, 255);
 }/*# sourceMappingURL=main.css.map */

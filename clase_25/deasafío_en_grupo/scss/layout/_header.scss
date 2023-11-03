@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as var;
+
+.header {
+    padding: 2vw;
+    color: var.$colorPrimaryDark;
+    background-color: var.$colorSecondaryDark;
+}

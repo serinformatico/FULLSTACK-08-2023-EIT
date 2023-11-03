@@ -1,0 +1,14 @@
+@use "./variables" as var;
+
+@mixin button-default($colorPrimary, $colorSecondary, $color) {
+    background-image: linear-gradient(127deg, $colorPrimary, $colorSecondary, $colorPrimary 65%);
+    border-color: $color;
+    color: $color;
+    transition: all 300ms;
+}
+
+@mixin button-active($colorPrimary, $colorSecondary, $color) {
+    background-image: linear-gradient(127deg, $colorPrimary, $colorSecondary, $colorPrimary 65%);
+    border-color: $color;
+    color: $color;
+}

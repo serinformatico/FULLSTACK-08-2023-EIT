@@ -1,0 +1,6 @@
+$colorPrimaryDark: black;
+$colorPrimaryLight: white;
+$colorSecondaryDark: lightgrey;
+$colorSecondaryLight: gray;
+$colorGradient1: linear-gradient($colorPrimaryLight, $colorSecondaryDark);
+$colorGradient2: linear-gradient($colorSecondaryDark,$colorSecondaryLight);

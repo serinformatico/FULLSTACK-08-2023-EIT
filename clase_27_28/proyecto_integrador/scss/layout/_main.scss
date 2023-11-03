@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.main {
+    grid-area: main;
+
+    .section {
+        width: 100%;
+
+        &--slider {
+            overflow: hidden;
+        }
+
+        &--products {
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+        }
+    }
+}

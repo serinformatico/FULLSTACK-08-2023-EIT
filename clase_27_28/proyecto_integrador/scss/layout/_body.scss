@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+$_padding: 0.5vw;
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    gap: 1vw;
+
+    padding: $_padding;
+    width: calc(100% - (2*$_padding));
+}

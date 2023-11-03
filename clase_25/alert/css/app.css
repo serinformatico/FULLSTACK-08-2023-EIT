@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    /* Declara una variable y asigna un valor */
+    --danger-color: rgb(132, 32, 41)
+}
+
+/* ************** Alertas de tipo toast ************** */
+
+.alert {
+    width: calc(100% - (2*0.25em));
+    margin: 0.25em;
+    padding: 0.25em;
+    background-color: rgb(226, 227, 229);
+    border: 1px solid rgb(211, 214, 216);
+    border-radius: 0.25em;
+    color: rgb(65, 70, 75);
+    font-size: 0.75em;
+    display: none;
+    justify-content: space-between;
+}
+
+.alert--success {
+    background-color: rgb(209, 231, 221);
+    border: 1px solid rgb(186, 219, 204);
+    color: rgb(15, 81, 50);
+}
+
+.alert--danger {
+    background-color: rgb(248, 215, 218);
+    border: 1px solid rgb(245, 194, 199);
+
+    /* Usa el valor de la variable */
+    color: var(--danger-color);
+}
+
+.alert__icon {
+    font-size: 1.1em;
+    margin-right: 0.25em;
+}
+
+.alert__close {
+    align-self: center;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+.alert--show {
+    display: flex;
+}
+
+.alert--hide {
+    display: none;
+}
+
+
+/* *********** Alertas de tipo input error *********** */
+form {
+    width: 350px;
+    margin: 1vw;
+    padding: 1vw;
+    background-color: beige;
+    border-radius: 1vw;
+}
+
+.input {
+    margin-bottom: 1.2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__error {
+    padding: 0.125em;
+    font-size: 0.65em;
+    color: rgb(200, 10, 10);
+}
+
+.input__validate:focus:valid {
+    border: none;
+    outline: 1px solid green;
+}
+
+.input__validate:focus:invalid {
+    border: none;
+    outline: 1px solid rgb(200, 10, 10);
+}

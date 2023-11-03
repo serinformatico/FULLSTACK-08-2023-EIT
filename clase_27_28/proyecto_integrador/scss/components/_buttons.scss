@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.button {
+    border: 0.0625rem solid black;
+    border-radius: 0.35rem;
+    box-shadow: 1px 1px 4px -3px gray;
+    cursor: pointer;
+
+    &--sm {
+        width: 6rem;
+        padding: 0.125rem;
+        font-size: 0.80rem;
+    }
+
+    &--md {
+        width: 9rem;
+        padding: 0.25rem;
+        font-size: 0.90rem;
+    }
+
+    &--lg {
+        width: 12rem;
+        padding: 0.375rem;
+        font-size: 1rem;
+    }
+
+    &--add {
+        @include mix.button-default(var.$backgroundColorLight, var.$backgroundColorLight, var.$backgroundColor);
+
+        &:hover,
+        &:active {
+            @include mix.button-active(var.$backgroundColorDark, var.$backgroundColor, var.$backgroundColorLight);
+        }
+    }
+
+    &--remove {
+        @include mix.button-default(white, white, red);
+
+        &:hover,
+        &:active {
+            @include mix.button-active(darkred, red, white);
+        }
+    }
+
+    &--disabled {
+        @include mix.button-default(white, white, gray);
+        cursor: default;
+
+        &:hover,
+        &:active {
+            @include mix.button-active(gray, lightgray, white);
+        }
+    }
+
+}

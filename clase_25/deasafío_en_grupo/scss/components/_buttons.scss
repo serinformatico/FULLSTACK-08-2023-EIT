@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as var;
+
+.buttonGradient {
+    width: 100%;
+    border-radius: 1vw;
+    background-image: var.$colorGradient1;
+
+    &:hover {
+        background-image: var.$colorGradient2;
+    }
+}

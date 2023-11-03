@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack" />
+    <meta name="keywords" content="bootcamp full stack html css javascript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+    <title>CSS App</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS - Clase 25</h1>
+        <h2>Alertas Personalizadas</h2>
+    </header>
+
+    <div class="alert">
+        <p class="alert__text">Esto es un toast</p>
+        <span class="alert__close material-symbols-outlined">close</span>
+    </div>
+
+    <main>
+        <section>
+            <button id="id-show-alert">Mostrar Alerta</button>
+        </section>
+
+        <section>
+            <form class="form-testing">
+                <div class="input">
+                    <label class="input__label" for="id-first-name">Nombre</label>
+                    <input class="input__validate" type="text" id="id-first-name" name="first-name" minlength="3" maxlength="20" required>
+                    <span class="input__error"></span>
+                </div>
+                <div class="input">
+                    <label class="input__label" for="id-age">Edad</label>
+                    <input class="input__validate" type="number" id="id-age" name="age" min="0" max="100" required>
+                    <span class="input__error"></span>
+                </div>
+                <div class="input">
+                    <input type="button" id="id-save" value="Guardar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 Javascript</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

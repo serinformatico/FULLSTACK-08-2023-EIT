@@ -1,25 +1,30 @@
 @use "./variables" as var;
 
-@mixin figure($figureName, $cantidad) {
+@mixin figure($figureName) {
     height: 100px;
-    border: 3px solid var.$colorSecondary;
+    border: 3px solid var.$colorSecondary ;
 
-    @if ($figureName == "cuadrado") {
+    @if ($figureName =="cuadrado") {
+        height: 100px;
         width: 100px;
     }
 
-    @else if ($figureName == "rectangulo") {
-        width: 150px;
+    @else if ($figureName =="rectangulo") {
+        height: 100px;
+        width: 150px
     }
 
     @else {
+        height: 100px;
         width: 100px;
         border-radius: 100%;
     }
+}
 
+@mixin color($cantidad) {
     @for $i from 1 through $cantidad {
         div:nth-of-type(#{$i}) {
-            color: rgb(50*$i, 25*$i, 50*($i*$i*$i));
+            color: rgb(70*$i, 25*$i, 70*($i+$i*$i));
         }
     }
 }
