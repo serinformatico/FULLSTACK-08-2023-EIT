@@ -22,7 +22,11 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "~/../css/"
+            "savePath": "/../css"
         }
-    ]
+    ],
+    "LiveSassCompile.settings.excludeList": [
+        // (descomentar para excluir esta carpeta) "**/FULLSTACK-08-2023-EIT/**",
+        // (descomentar para excluir esta carpeta) "**/proyecto-integrador/**",
+    ],
 }

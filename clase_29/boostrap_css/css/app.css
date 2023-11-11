@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin: 10px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.mi-color {
+    background-color: red !important;
+}

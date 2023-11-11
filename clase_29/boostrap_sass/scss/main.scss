@@ -1,0 +1,14 @@
+@use "../node_modules/bootstrap/scss/bootstrap.scss";
+
+h1 {
+    color: red;
+}
+
+.altura {
+    height: 200px !important;
+}
+
+.mi-color {
+    // Uso de variables de Bootstrap
+    color: bootstrap.$indigo-200;
+}
