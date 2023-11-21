@@ -1,0 +1,19 @@
+section>div {
+    height: 200px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    font-size: small;
+}
+
+section>div>div {
+    height: 75px;
+    width: 75px;
+    background-color: blueviolet;
+}
+
+section>div>div>div {
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+}
