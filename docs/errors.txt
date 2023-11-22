@@ -8,6 +8,8 @@ ERRORS
         Presionar la tecla "Enter"
     Motivo: "Live Sass Compalier" debe regenerarse al crear o cambiar de proyecto.
 
-2.  Error:
-    Solución para LINUX:
-    Motivo:
+2.  Error: Refused to apply style from 'http://127.0.0.1:5500/css/app.css' because its MIME
+	type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking
+	is enabled.
+    Solución: Borrar en el HTML el vínculo al archivo CSS o crear dicho archivo
+    Motivo: No encuentra el archivo .css vinculado al HTML
