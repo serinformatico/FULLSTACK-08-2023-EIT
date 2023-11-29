@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootcamp de Full Stack" />
+    <meta name="keywords" content="bootcamp full stack html css javascript" />
+    <meta name="author" content="Sergio Regalado Alessi" />
+    <title>Mi App</title>
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML - Clase 33</h1>
+        <h2>Ajax - Vista previa de imagen (progreso)</h2>
+    </header>
+
+    <main>
+        <section>
+            <form class="form">
+                <div class="form__div">
+                    <label for="id-url">URL</label>
+                    <input type="text" name="url" id="id-url" placeholder="Ingresa la URL de la imagen">
+                </div>
+                <div class="form__div">
+                    <div id="id-image-preview"></div>
+                </div>
+                <div class="form__div">
+                    <input type="button" value="Procesar" id="id-btn-process">
+                    <span class="form__div__notify" id="id-result"></span>
+                    <progress class="form__div__progress" value="0" max="100" id="id-progress" hidden></progress>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2023 Javascript</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

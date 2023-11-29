@@ -1,0 +1,26 @@
+.form {
+    width: clamp(300px, 100%, 450px);
+    padding: 1vw;
+    background-color: beige;
+}
+
+.form__div {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__div__img {
+    width: 100%;
+}
+
+.form__div__notify {
+    padding: 0.20rem 0;
+    color: blue;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.form__div__progress {
+    width: 100%;
+}
