@@ -1,0 +1,38 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+header {
+    height: 10vh;
+    width: 91vw;
+    margin: 5vh 2vw 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+
+    .logo {
+        margin-right: auto;
+        border-radius: 100%;
+        box-shadow: 3px 3px 15px -5px gray;
+
+        .logo__image {
+            width: 10vh;
+            padding: 0.5vw;
+            animation: move-logo 10s ease-in infinite;
+        }
+    }
+
+    @keyframes move-logo {
+        0% {
+            transform: rotateX(0);
+        }
+
+        50% {
+            transform: rotateX(180deg);
+        }
+
+        100% {
+            transform: rotateX(360deg);
+        }
+    }
+}

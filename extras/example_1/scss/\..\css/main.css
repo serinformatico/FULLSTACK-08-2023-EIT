@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../images/background.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  height: 10vh;
+  width: 91vw;
+  margin: 5vh 2vw 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+}
+header .logo {
+  margin-right: auto;
+  border-radius: 100%;
+  box-shadow: 3px 3px 15px -5px gray;
+}
+header .logo .logo__image {
+  width: 10vh;
+  padding: 0.5vw;
+  animation: move-logo 10s ease-in infinite;
+}
+@keyframes move-logo {
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.navbar {
+  position: relative;
+  padding: 2vh;
+  border: 1px solid white;
+  border-right: none;
+  border-radius: 2vh 0 0 2vh;
+}
+.navbar .navbar_list {
+  display: flex;
+  gap: 1vw;
+}
+.navbar .navbar_list li a {
+  padding: 0.5vw 1vw;
+  font-size: 1.2em;
+  color: salmon;
+  text-shadow: 0 0 15px rgb(200, 200, 200);
+  transition: all 300ms;
+}
+.navbar .navbar_list li a:hover {
+  color: white;
+}
+.navbar .navbar_list .navbar_list--selected {
+  font-weight: bold;
+  color: white;
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cover .cover__banner {
+  position: relative;
+  left: 10vw;
+  height: 100vh;
+  width: 40vw;
+  padding: 3vw;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vw;
+}
+.cover .cover__banner .cover__banner__title {
+  font-size: 2em;
+  color: salmon;
+  text-shadow: 2px 2px 30px rgba(255, 166, 0, 0.7);
+}
+.cover .cover__banner .cover__banner__text {
+  font-size: 1.2em;
+  color: #fff;
+}
+.cover .cover__banner .cover__banner__button {
+  width: 7vw;
+  padding: 0.5vw 1vw;
+  border: none;
+  border-radius: 4vh;
+  background: linear-gradient(to right, salmon, brown);
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 30px -12px brown;
+  transition: all 300ms;
+}
+.cover .cover__banner .cover__banner__button:hover {
+  box-shadow: 2px 2px 30px -5px brown;
+}
+.cover .cover__image .cover__image__sun {
+  position: fixed;
+  top: 25vh;
+  left: 65vw;
+  width: 25vw;
+  animation: move-sun 20s linear infinite;
+  z-index: 2;
+}
+.cover .cover__image .cover__image__earth {
+  position: fixed;
+  top: 49vh;
+  left: 65vw;
+  width: 3vw;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+  animation: move-earth 10s linear infinite;
+}
+@keyframes move-sun {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes move-earth {
+  0% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
+  25% {
+    transform: translateX(10vw) scale(1.5);
+  }
+  50% {
+    transform: translateX(20vw) scale(1);
+  }
+  75% {
+    transform: translateX(10vw) scale(0.75);
+    z-index: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}/*# sourceMappingURL=main.css.map */

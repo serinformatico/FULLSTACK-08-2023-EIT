@@ -1,0 +1,108 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .cover__banner {
+        position: relative;
+        left: 10vw;
+        height: 100vh;
+        width: 40vw;
+        padding: 3vw;
+        background-color: rgba(0, 0, 0, 0.75);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vw;
+
+        .cover__banner__title {
+            font-size: 2em;
+            color: salmon;
+            text-shadow: 2px 2px 30px rgba(255, 166, 0, 0.7);
+        }
+
+        .cover__banner__text {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        .cover__banner__button {
+            width: 7vw;
+            padding: 0.5vw 1vw;
+            border: none;
+            border-radius: 4vh;
+            background: linear-gradient(to right, salmon, brown);
+            font-size: 1em;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 1px 1px 30px -12px brown;
+            transition: all 300ms;
+        }
+
+        .cover__banner__button:hover {
+            box-shadow: 2px 2px 30px -5px brown;
+        }
+    }
+
+    .cover__image {
+        .cover__image__sun {
+            position: fixed;
+            top: 25vh;
+            left: 65vw;
+            width: 25vw;
+            animation: move-sun 20s linear infinite;
+            z-index: 2;
+        }
+
+        .cover__image__earth {
+            position: fixed;
+            top: 49vh;
+            left: 65vw;
+            width: 3vw;
+            filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+            animation: move-earth 10s linear infinite;
+        }
+
+        @keyframes move-sun {
+            0% {
+                transform: rotate(0) scale(1);
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.05);
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+
+        @keyframes move-earth {
+            0% {
+                transform: translateX(0) scale(1);
+                z-index: 3;
+            }
+
+            25% {
+                transform: translateX(10vw) scale(1.5);
+            }
+
+            50% {
+                transform: translateX(20vw) scale(1);
+            }
+
+            75% {
+                transform: translateX(10vw) scale(0.75);
+                z-index: 1;
+            }
+
+            100% {
+                transform: translateX(0) scale(1);
+            }
+        }
+    }
+}
