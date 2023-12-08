@@ -1,0 +1,40 @@
+.header .header__title {
+  font-family: "Super Plants", serif;
+  color: rgb(220, 53, 69);
+}
+.header .header__subtitle {
+  color: rgb(220, 53, 69);
+}
+
+.navbar {
+  background-color: rgb(220, 53, 69);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Super Plants";
+  src: url("../fonts/super_plants.ttf");
+}
+.home .cover {
+  background-color: #4e342e;
+}
+
+.gallery .cover {
+  color: white;
+  background-color: #a1887f;
+}/*# sourceMappingURL=main.css.map */
