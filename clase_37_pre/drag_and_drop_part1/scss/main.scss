@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$paddingDrop: 1vw;
+$marginDrop: 1vw;
+$colorDropInactive: gray;
+$colorDropActive: black;
+
+.section-drop {
+    padding: $paddingDrop;
+
+    .form {
+        padding: $paddingDrop;
+        background-color: beige;
+
+        display: flex;
+        flex-direction: column;
+        gap: $paddingDrop;
+
+        &__group {
+            display: flex;
+            flex-direction: column;
+
+            &__drop-zone {
+                height: 100%;
+                width: calc(100vw - ($paddingDrop * 2) - ($marginDrop * 2));
+                padding: $paddingDrop;
+                border: 2px dashed $colorDropInactive;
+                background-color: white;
+                font-size: small;
+                color: $colorDropInactive;
+
+                display: flex;
+                flex-direction: column;
+                gap: $marginDrop;
+
+                // Agrega contenido inicial solamente cuando el contedor está vacío
+                &:empty::before {
+                    content: "Hece clic o arrastra y solta tus archivos aquí";
+                    align-self: center;
+                }
+
+                &:hover {
+                    border-color: $colorDropActive;
+                    color: $colorDropActive;
+                }
+
+                &--file {
+                    display: flex;
+                    align-items: center;
+                    gap: $marginDrop;
+                }
+            }
+
+            &__drop-input-file {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "clase_33",
+    "version": "1.0.0",
+    "description": "Bootcamp de Full Stack - Eduación IT",
+    "scripts": {
+        "start": "node --watch --no-warnings ./server.js",
+        "stop": "killall -9 node"
+    },
+    "keywords": [],
+    "author": "Lic. Sergio Regalado Alessi",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2"
+    }
+}
