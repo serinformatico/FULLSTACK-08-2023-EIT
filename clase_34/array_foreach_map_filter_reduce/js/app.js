@@ -6,7 +6,7 @@ colores.forEach((color) => console.log(color));
 
 
 /* ***************** Ejemplos de método map() ***************** */
-const coloresEnMayusculas = costos.map((color) => color.toUpperCase());
+const coloresEnMayusculas = colores.map((color) => color.toUpperCase());
 console.log('Colores en Mayúsculas', coloresEnMayusculas);
 
 const costosIncrementados = costos.map((costo) => {
