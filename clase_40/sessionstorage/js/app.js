@@ -38,17 +38,18 @@ const setThemaDark = (checked) => {
     } else {
         body.classList.remove("theme--dark");
     }
-
-    window.sessionStorage.setItem("theme-dark", checked);
 };
 
 inputThema.onclick = (event) => {
-    setThemaDark(event.target.checked);
+    const checked = event.target.checked;
+
+    setThemaDark(checked);
+    window.sessionStorage.setItem("theme-dark", String(checked));
 };
 
 window.onload = () => {
     const checked = setDataType(window.sessionStorage.getItem('theme-dark'));
-    setThemaDark(checked);
 
+    setThemaDark(checked);
     inputThema.checked = checked;
 };

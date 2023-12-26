@@ -1,16 +1,19 @@
 // Identifica y rectifica el tipo de dato de un valor
 const setDataType = (value) => {
+    if (value === "true" || value === true) {
+        return true;
+    }
+
+    if (value === "false" || value === false) {
+        return false;
+    }
+
     let numberValue = Number(value);
+    if (!Number.isNaN(numberValue)) {
+        if (Number.isInteger(numberValue)) {
+            return Number.parseInt(numberValue);
+        }
 
-    if (typeof value === "boolean" && typeof value != "number") {
-        return Boolean(value);
-    }
-
-    if (!Number.isNaN(numberValue) && Number.isInteger(numberValue)) {
-        return Number.parseInt(numberValue);
-    }
-
-    if (!Number.isNaN(numberValue) && !Number.isInteger(numberValue)) {
         return Number.parseFloat(numberValue).toFixed(2);
     }
 

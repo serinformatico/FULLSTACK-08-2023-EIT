@@ -25,8 +25,6 @@ window.localStorage.removeItem("marca");
 // Quitar todos los ítems
 // window.localStorage.clear();
 
-
-
 /* ************************ EJEMPLO DE USO ************************ */
 const body = document.querySelector("body");
 const inputThema = document.getElementById("thema");
@@ -37,17 +35,18 @@ const setThemaDark = (checked) => {
     } else {
         body.classList.remove("theme--dark");
     }
-
-    window.localStorage.setItem("theme-dark", checked);
 };
 
 inputThema.onclick = (event) => {
-    setThemaDark(event.target.checked);
+    const checked = event.target.checked;
+
+    setThemaDark(checked);
+    window.localStorage.setItem("theme-dark", String(checked));
 };
 
 window.onload = () => {
     const checked = setDataType(window.localStorage.getItem('theme-dark'));
-    setThemaDark(checked);
 
+    setThemaDark(checked);
     inputThema.checked = checked;
 };

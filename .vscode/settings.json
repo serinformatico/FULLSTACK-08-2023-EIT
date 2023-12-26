@@ -1,22 +1,17 @@
 {
-    "window.zoomLevel": 2,
-    "workbench.editorAssociations": {
-        "*.html": "default"
-    },
+    "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
     "workbench.startupEditor": "none",
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "security.workspace.trust.untrustedFiles": "open",
+    "eslint.format.enable": true,
     "editor.minimap.enabled": false,
     "editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "cSpell.languageSettings": [],
-    "editor.formatOnPaste": true,
-    "open-in-browser.default": "chrome",
     "liveServer.settings.donotShowInfoMsg": true,
-    "livePreview.portNumber": 3010,
     "liveSassCompile.settings.autoprefix": [],
     "liveSassCompile.settings.formats": [
         {
@@ -29,4 +24,10 @@
         // (descomentar para excluir esta carpeta) "**/FULLSTACK-08-2023-EIT/**",
         // (descomentar para excluir esta carpeta) "**/proyecto-integrador/**",
     ],
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
 }
