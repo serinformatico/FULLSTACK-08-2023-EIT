@@ -1,0 +1,17 @@
+@use "./styles/variables";
+@use "./styles/mixins";
+@use "./styles/reset";
+@use "./styles/typography";
+
+#root {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content auto max-content;
+    grid-template-areas:
+        "header header header"
+        "main main sidebar"
+        "footer footer footer";
+    gap: 0.5vw;
+}

@@ -1,0 +1,12 @@
+@use "../../styles/variables" as var;
+
+.header {
+    grid-area: header;
+
+    background-color: gray;
+
+    h1 {
+        color: var.$colorFontH1;
+        font-family: "Super Plants";
+    }
+}
