@@ -6,8 +6,9 @@ const App = () => {
     const [color, setColor] = useState();
     const [colores, setColores] = useState(["azul", "rojo"]);
 
-    const handleOnChangeColor = (color) => {
-        colorRef.current = color;
+    const handleOnChangeColor = () => {
+        console.log(colorRef.current);
+        colorRef.current = null;
     };
 
     const handleOnClickSave = () => {
@@ -37,7 +38,7 @@ const App = () => {
         <div>
             <div>
                 <label htmlFor="color">Color </label>
-                <input type="text" id="color" onChange={(e) => handleOnChangeColor(e.target.value)} value={color} />
+                <input type="text" id="color" onChange={(e) => handleOnChangeColor(e.target.value)} value={color} ref={colorRef} />
                 <button onClick={handleOnClickSave}>Guardar</button>
             </div>
             <div>
