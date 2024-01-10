@@ -5,7 +5,7 @@ const App = () => {
     const [ count, setCount ] = useState(0);
 
     const handleOnClickDecrement = () => {
-        setCount(count + 1);
+        setCount(count - 1);
     };
 
     const handleOnClickIncrement = () => {
