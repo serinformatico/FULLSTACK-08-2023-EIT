@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./app.scss";
 
 import Main from "./components/Main";
-import CounterContext from "./contexts/CounterContext";
+import CounterContext from "./contexts/CounterContext.js";
 
 const App = () => {
     const [ count, setCount ] = useState(0);

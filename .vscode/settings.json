@@ -24,10 +24,10 @@
         // (descomentar para excluir esta carpeta) "**/FULLSTACK-08-2023-EIT/**",
         // (descomentar para excluir esta carpeta) "**/proyecto-integrador/**",
     ],
-    "[javascript]": {
+    "[javascriptreact]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
-    "[javascriptreact]": {
+    "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     }
 }
