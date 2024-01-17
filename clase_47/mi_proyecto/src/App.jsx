@@ -11,17 +11,23 @@ import Contact from "./pages/Contact";
 const App = () => {
     return (
         <>
-            <Header />
+            <Header/>
 
             <Main>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route
+                        path="/"
+                        element={<Home/>}/>
+                    <Route
+                        path="/about"
+                        element={<About/>}/>
+                    <Route
+                        path="/contact"
+                        element={<Contact/>}/>
                 </Routes>
             </Main>
 
-            <Footer />
+            <Footer/>
         </>
     );
 };
