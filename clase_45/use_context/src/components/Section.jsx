@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import CounterContext from "../contexts/CounterContext";
+import CounterContext from "../contexts/CounterContext.js";
 
 import Text from "./Text";
 import Button from "./Button";
