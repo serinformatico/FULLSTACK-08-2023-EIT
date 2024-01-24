@@ -1,0 +1,15 @@
+@use "../styles/scss/variables" as var;
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5vw;
+
+    width: var.$widthContent;
+
+    &__section {
+        h3 {
+            color: red;
+        }
+    }
+}
