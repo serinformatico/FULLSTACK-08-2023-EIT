@@ -1,0 +1,31 @@
+@use "../../../styles/scss/variables" as var;
+
+.input-field {
+    width: 100%;
+
+    &--valid {
+        label.Mui-focused {
+            color: var.$colorBorderLessDark !important;
+        }
+
+        div input+fieldset,
+        div input:focus+fieldset,
+        div textarea+fieldset,
+        div textarea:focus+fieldset {
+            border-color: var.$colorBorderLessDark !important;
+        }
+    }
+
+    &--invalid {
+        label.Mui-focused {
+            color: var.$colorBorderDanger !important;
+        }
+
+        div input+fieldset,
+        div input:focus+fieldset,
+        div textarea+fieldset,
+        div textarea:focus+fieldset {
+            border-color: var.$colorBorderDanger !important;
+        }
+    }
+}

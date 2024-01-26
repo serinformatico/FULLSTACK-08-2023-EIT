@@ -1,0 +1,17 @@
+@use "../styles/scss/variables" as var;
+
+.home {
+    width: var.$widthContent;
+
+    &__section {
+        &__search {}
+
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1vw;
+
+            padding: 1rem 0;
+        }
+    }
+}
