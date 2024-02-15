@@ -1,12 +1,22 @@
+/*
+    DEBBUGER VSC - REACT
+        Consideraciones:
+            1. Levantar el servidor de VITE-REACT.
+            2. Comprobar que el puerto del servidor de VITE-REACT sea el 5173.
+               Caso contrario, actualizar el puerto (dentro de este archivo).
+            3. Modificar la ruta de la carpeta en donde se encuentra el proyecto.
+               Ej. /FULLSTACK-08-2023-EIT/clase_51/mi-proyecto
+            4. Verificar que tenes instalado Google Chrome (es vital).
+*/
 {
     "version": "0.2.0",
     "configurations": [
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Iniciar Chrome para localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "name": "Vite Debbug",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/FULLSTACK-08-2023-EIT/clase_51/mi-proyecto"
         }
     ]
 }
