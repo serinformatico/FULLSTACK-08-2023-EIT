@@ -14,20 +14,12 @@ import {
 } from "@mui/material";
 import "./navbar.scss";
 
+import links from "../../../links/links";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-
 const Navbar = () => {
-    const links = [
-        { title: "Inicio", url: "/", icon: <HomeOutlinedIcon/> },
-        { title: "Nosotros", url: "/about", icon: <StorefrontOutlinedIcon/> },
-        { title: "Contacto", url: "/contact", icon: <EmailOutlinedIcon/> },
-    ];
-
     const [ openDrawer, setOpenDrawer ] = useState(false);
 
     const handleOnClickOpenDrawer = () => {

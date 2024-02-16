@@ -3,6 +3,14 @@ import * as yup from "yup";
 import { Box } from "@mui/material";
 import "./contact.scss";
 
+import {
+    MESSAGE_REQUIRED,
+    MESSAGE_TELEPHONE_INVALID,
+    MESSAGE_EMAIL_INVALID,
+    REGEX_TELEPHONE,
+    REGEX_EMAIL,
+} from "../../constanst/regexPattern.js";
+
 import InputField from "../../components/form/inputField/InputField";
 import Button from "../../components/button/Button";
 
@@ -11,13 +19,6 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
 
 const Contact = () => {
-    const MESSAGE_REQUIRED = "Este dato es obligatorio";
-    const MESSAGE_TELEPHONE_INVALID = "Ingresa un teléfono válido. Ej: (0264)424-1020";
-    const MESSAGE_EMAIL_INVALID = "Ingresa un email válido. Ej. ser@gmail.com";
-
-    const REGEX_TELEPHONE = /^[(][0-9]{3,4}[)][0-9]{3}[-][0-9]{4,8}$/;
-    const REGEX_EMAIL = /^[a-z0-9.]+@[a-z0-9-]+.(com$|com.[a-z0-9]{2}$)/;
-
     const validationSchema = yup.object({
         fullname: yup
             .string("Ingresa tu nombre y apellido")

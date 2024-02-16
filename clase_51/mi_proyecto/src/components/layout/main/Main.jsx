@@ -5,6 +5,7 @@ import "./main.scss";
 import Home from "../../../pages/home/Home";
 import About from "../../../pages/about/About";
 import Contact from "../../../pages/contact/Contact";
+import Product from "../../../pages/product/Product";
 
 const Main = () => {
     return (
@@ -21,6 +22,9 @@ const Main = () => {
                 <Route
                     path="/contact"
                     element={<Contact/>}/>
+                <Route
+                    path="/product"
+                    element={<Product/>}/>
             </Routes>
         </Box>
     );

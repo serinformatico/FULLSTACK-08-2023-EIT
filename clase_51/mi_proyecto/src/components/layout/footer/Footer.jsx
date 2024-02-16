@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import { Box, Link, Tooltip } from "@mui/material";
 import "./footer.scss";
 
+import links from "../../../links/links";
+
 import Discord from "../../../styles/svg/Discord";
 import Facebook from "../../../styles/svg/Facebook";
 import Instagram from "../../../styles/svg/Instagram";
@@ -10,12 +12,6 @@ import Twitter from "../../../styles/svg/Twitter";
 import Youtube from "../../../styles/svg/Youtube";
 
 const Footer = () => {
-    const links = [
-        { title: "Inicio", url: "/" },
-        { title: "Nosotros", url: "/about" },
-        { title: "Contacto", url: "/contact" },
-    ];
-
     const socialMedias = [
         { url: "https://discord.com/channels/859921242023133215/1084896600175956068", icon: <Discord/>, toolTip: "Discord" },
         { url: "/", icon: <Facebook/>, toolTip: "Facebook" },
