@@ -22,14 +22,14 @@ const App = () => {
             <button onClick={() => increment()}>+</button>
 
             {/* CONTADOR - Versión que usa el custom hooks useLocalStorage */}
-            <p>{localStorage.value.count}</p>
-            <button onClick={() => localStorage.setItemValue("count", localStorage.value.count-1)}>-</button>
-            <button onClick={() => localStorage.setItemValue("count", localStorage.value.count+1)}>+</button>
+            <p>{localStorage.items.count}</p>
+            <button onClick={() => localStorage.setItem("count", localStorage.items.count-1)}>-</button>
+            <button onClick={() => localStorage.setItem("count", localStorage.items.count+1)}>+</button>
 
             <Box>
                 <button onClick={() => localStorage.removeItem("count")}>Eliminar item</button>
                 <button onClick={() => localStorage.clearItems()}>Eliminar todos los items</button>
-                <button onClick={() => localStorage.setItemValue("saludo", "hola")}>Agregar item</button>
+                <button onClick={() => localStorage.setItem("saludo", "hola")}>Agregar item</button>
             </Box>
         </Box>
     );
