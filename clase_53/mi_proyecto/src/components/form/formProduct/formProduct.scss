@@ -1,0 +1,16 @@
+@use "../../../styles/scss/variables" as var;
+
+.form-product {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+
+    width: 556px;
+
+    &__image {
+        width: 556px;
+
+        border: 0.0675rem solid var.$colorBorderDark;
+        border-radius: 0.25rem / 0.25rem;
+    }
+}
