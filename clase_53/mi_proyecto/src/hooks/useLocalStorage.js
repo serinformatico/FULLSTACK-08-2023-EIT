@@ -15,7 +15,7 @@ const useLocalStorage = (initialValue = {}) => {
             return JSON.parse(value);
         }
 
-        return value;
+        return null;
     };
 
     const setItem = (key, value) => {

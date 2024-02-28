@@ -13,7 +13,7 @@ import { NavLink } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
 import { useEffect } from "react";
 import { useContext } from "react";
-import { ShoppingCartContext } from "../../contexts/ShoppingCartContext";
+import ShoppingCartContext from "../../contexts/ShoppingCartContext";
 
 const ProductCard = (props) => {
     const { product, setProducts, itIsOff } = props;
