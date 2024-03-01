@@ -4,8 +4,8 @@
     "description": "Servidor HTTP en Node JS",
     "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node --watch --no-warnings ./server.js"
+        "start": "node --watch --no-warnings ./server.js",
+        "stop": "killall -9 node"
     },
     "keywords": [
         "servidor http",
