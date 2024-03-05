@@ -36,7 +36,6 @@ module.exports = {
 
         // Reglas de Interlineados
         "no-multiple-empty-lines": [ "error", { "max": 1, "maxEOF": 1, "maxBOF": 1 }],
-        "linebreak-style": [ "error", "unix" ],
         "eol-last": [ "error", "never" ],
 
         // Reglas de Variables y Constantes
