@@ -1,0 +1,21 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "Servidor HTTP en Node JS",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "keywords": [
+        "servidor http",
+        "servidor node"
+    ],
+    "author": "Sergio Regalado Alessi",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0"
+    }
+}
