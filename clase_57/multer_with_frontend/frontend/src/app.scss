@@ -1,0 +1,23 @@
+.app {
+    h1 {
+        color: brown;
+    }
+
+    &__form {
+        width: 300px;
+
+        &__group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2vw;
+        }
+    }
+
+    &__image {
+        width: 300px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
