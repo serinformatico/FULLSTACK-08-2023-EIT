@@ -57,12 +57,13 @@ const App = () => {
                         type="file"
                         id="file"
                         name="file"
+                        accept=".png, .jpg"
                         onChange={(event) => formik.setFieldValue("file", event.target.files[0])}
                         onBlur={formik.handleBlur}
                     />
                 </div>
 
-                <button type="submit">Cargar Archivo</button>
+                <button type="submit">Subir Archivo</button>
             </form>
 
             <div className="app__image">
