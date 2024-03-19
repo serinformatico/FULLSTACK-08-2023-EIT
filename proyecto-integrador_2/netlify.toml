@@ -1,0 +1,11 @@
+[build]
+    command   = "npm run build"
+    functions = "netlify/functions"
+    publish   = "dist"
+    base      = "/"
+
+
+[[redirects]]
+    from   = "/*"
+    to     = "/index.html"
+    status = 200
