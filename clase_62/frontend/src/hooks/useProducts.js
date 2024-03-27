@@ -57,6 +57,21 @@ const useProducts = () => {
             .then((res) => {
                 setResponse(res);
                 removeCartProduct(id);
+                searchProducts({});
+                return res.data;
+            });
+    };
+
+    const uploadProductImage = async (file) => {
+        const options = {
+            headers: {
+                "Content-Type": "multipart/form-data",
+            },
+        };
+
+        return await axios.post(`${PRODUCTS_URL}/upload`, { file }, options)
+            .then((res) => {
+                setResponse(res);
                 return res.data;
             });
     };
@@ -69,6 +84,7 @@ const useProducts = () => {
         updateProduct,
         //updateProductStock,
         removeProduct,
+        uploadProductImage,
     };
 };
 

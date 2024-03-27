@@ -9,20 +9,30 @@ import "./formProduct.scss";
 import validationSchema from "./formProduct.validation.js";
 
 import InputField from "../inputField/InputField.jsx";
+import InputFile from "../inputFile/InputFile.jsx";
+
 import Switch from "../switch/Switch.jsx";
 import Button from "../../button/Button.jsx";
 import Alert from "../../alert/Alert.jsx";
+import { IMAGES_URL, IMAGE_DEFAULT_NAME } from "../../../constants/api.js";
+import { JPG, PNG } from "../../../constants/general.js";
 
 const FormProduct = (props) => {
     const { initialValues } = props;
 
     const [ openAlert, setOpenAlert ] = useState(false);
-    const { createProduct, updateProduct } = useProducts();
+    const { createProduct, updateProduct, uploadProductImage } = useProducts();
 
     const formik = useFormik({
         initialValues: initialValues,
         validationSchema: validationSchema,
-        onSubmit: (values) => {
+        onSubmit: async (values) => {
+            if (values?.files) {
+                const response = await uploadProductImage(values.files[0]);
+                values.imageFileName = response?.data?.filename ? response.data.filename : IMAGE_DEFAULT_NAME;
+            }
+            console.log(values);
+
             values.id ? updateProduct(values) : createProduct(values);
             setOpenAlert(true);
         },
@@ -78,20 +88,18 @@ const FormProduct = (props) => {
                 errorMessage={formik.touched.description && formik.errors.description}
                 inputProps={{ maxLength: 150 }}/>
 
-            <InputField
-                label="Ruta de la imagen"
-                name="image"
-                value={formik.values.image}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                error={formik.touched.image && Boolean(formik.errors.image)}
-                errorMessage={formik.touched.image && formik.errors.image}
-                inputProps={{ maxLength: 50 }}/>
+            <InputFile
+                label="Imagen"
+                name="files"
+                accept={[ JPG, PNG ]}
+                formik={formik}
+                error={formik.touched.files && Boolean(formik.errors.files)}
+                errorMessage={formik.touched.files && formik.errors.files}/>
 
             <Box
                 className="form-product__image"
                 component="img"
-                src={formik.values.image}
+                src={`${IMAGES_URL}/${formik.values.imageFileName}`}
                 alt="Fotografía del producto"/>
 
             <Switch
@@ -124,7 +132,7 @@ FormProduct.propTypes = {
         price: PropTypes.number.isRequired,
         stock: PropTypes.number.isRequired,
         description: PropTypes.string.isRequired,
-        image: PropTypes.string.isRequired,
+        imageFileName: PropTypes.string.isRequired,
         isPromotion: PropTypes.bool.isRequired,
     }).isRequired,
 };
@@ -135,8 +143,9 @@ FormProduct.defaultProps = {
         price: 0,
         stock: 0,
         description: "",
-        image: "/images/home/products/default.jpg",
+        imageFileName: IMAGE_DEFAULT_NAME,
         isPromotion: false,
+        files: [],
     },
 };
 

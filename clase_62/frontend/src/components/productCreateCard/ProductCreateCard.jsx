@@ -10,7 +10,7 @@ const ProductCreateCard = () => {
             <CardMedia
                 component="img"
                 className="product-create-card__image"
-                image="/images/home/products/create.png"
+                image="/images/home/createProduct.png"
                 alt="Imagen de crear producto"/>
             <CardActions className="product-create-card__actions">
                 <Button

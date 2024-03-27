@@ -1,7 +1,7 @@
 const Joi = require("joi");
 
 const validate = (schema, params, res, next) => {
-    const { error } = schema.validate(params);
+    const { error } = schema.validate(params, { allowUnknown: true });
 
     if (error) {
         console.log({ error: error.details[0].message });
@@ -32,6 +32,7 @@ const validateBody = (req, res, next) => {
         stock: Joi.number().integer().min(0).required(),
         price: Joi.number().min(1).required(),
         isPromotion: Joi.boolean().required(),
+        amount: Joi.number().integer().min(0).allow(null),
     });
 
     validate(schema, req.body, res, next);
