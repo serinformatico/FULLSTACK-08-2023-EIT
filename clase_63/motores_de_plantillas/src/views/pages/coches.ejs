@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+
+    <link rel="stylesheet" href="../../public/css/app.css">
+</head>
+
+<body>
+    <%- include('../partials/header'); %>
+
+        <main>
+            <h2>COCHES</h2>
+            <br>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% coches.forEach((coche)=> { %>
+                        <tr>
+                            <td>
+                                <%=coche.id%>
+                            </td>
+                            <td>
+                                <%=coche.marca%>
+                            </td>
+                            <td>
+                                <%=coche.modelo%>
+                            </td>
+                            <td>
+                                <%=coche.anio%>
+                            </td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+        </main>
+
+        <%- include('../partials/footer'); %>
+</body>
+
+</html>
