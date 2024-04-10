@@ -1,0 +1,13 @@
+[build]
+    command   = "npm run build"
+    functions = "netlify/functions"
+    publish   = "dist"
+    base      = "/"
+
+[build.environment]
+    VITE_BACKEND_HOST = "https://mi-tienda-sergio.onrender.com"
+
+[[redirects]]
+    from   = "/*"
+    to     = "/index.html"
+    status = 200

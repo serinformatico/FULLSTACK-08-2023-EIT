@@ -1,0 +1,122 @@
+[
+    {
+        "_id": "65f7a335ac9e84450cd2e6eb",
+        "id": 2,
+        "name": "PIZZA DE 4 QUESOS",
+        "description": "Salsa de tomate, Quezo Muzzarella, Quezo Roquefort, Quezo Provoleta y Quezo Parmesano.",
+        "imageFileName": "img_363247_20240318021520.jpg",
+        "stock": 4,
+        "price": 9500,
+        "isPromotion": false
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6ea",
+        "id": 1,
+        "name": "PIZZA DE ANANA CON JAMON",
+        "description": "Salsa de tomate, Ananá al Natural, Jamón Cocido, Quezo Muzzarella y Aceitunas Negras Rayadas.",
+        "imageFileName": "img_862179_20240318021549.jpg",
+        "stock": 10,
+        "price": 7800,
+        "isPromotion": false
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6ec",
+        "id": 3,
+        "name": "PIZZA DE BOLOGNESA",
+        "description": "Salsa de Tomate, Carne Picada, Quezo Muzzarella y Morrones.",
+        "imageFileName": "img_991460_20240318021630.jpg",
+        "stock": 1,
+        "price": 9600,
+        "isPromotion": false
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6ed",
+        "id": 4,
+        "name": "PIZZA DE CALABRESA",
+        "description": "Salsa de Tomate, Quezo Muzzarella, Calabresa, Oregano y Aros de Cebolla.",
+        "imageFileName": "img_738455_20240318021644.jpg",
+        "stock": 3,
+        "price": 8300,
+        "isPromotion": true
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6f1",
+        "id": 8,
+        "name": "PIZZA DE CANTIMPALO",
+        "description": "Cantimpalo, Salsa de Tomate, Muzzarella, Ají Molido y Aceitunas Verdes.",
+        "imageFileName": "img_371202_20240318021700.jpg",
+        "stock": 0,
+        "price": 7500,
+        "isPromotion": true
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6f0",
+        "id": 7,
+        "name": "PIZZA DE CEBOLLA CARAMELIZADA",
+        "description": "Quezo Muzzarella, Cebolla, Azúcar, Calabresa y Quezo Roquefort.",
+        "imageFileName": "img_765267_20240318021714.jpg",
+        "stock": 4,
+        "price": 9000,
+        "isPromotion": true
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6ee",
+        "id": 5,
+        "name": "PIZZA DE CHAMPIGNONES",
+        "description": "Salsa de Tomate, Quezo Muzzarella, Champignones y Aceitunas Negras.",
+        "imageFileName": "img_802715_20240318021728.jpg",
+        "stock": 10,
+        "price": 8500,
+        "isPromotion": true
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6ef",
+        "id": 6,
+        "name": "PIZZA DE CHOCLO",
+        "description": "Salsa de Tomate, Quezo Muzzarella, Choclo, Salsa Blanca y Aceitunas.",
+        "imageFileName": "img_905046_20240318021741.jpg",
+        "stock": 50,
+        "price": 6800,
+        "isPromotion": false
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6f2",
+        "id": 9,
+        "name": "PIZZA DE FUGAZZA AL ROQUEFORT",
+        "description": "Clásica Fugazza de Cebolla con Queso Roquefort.",
+        "imageFileName": "img_714050_20240318021758.jpg",
+        "stock": 0,
+        "price": 8000,
+        "isPromotion": false
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6f3",
+        "id": 10,
+        "name": "PIZZA DE FUGAZZA CON MUZARELLA",
+        "description": "Clásica Fugazza de Cebolla con Quezo Muzzarella.",
+        "imageFileName": "img_552205_20240318021813.jpg",
+        "stock": 3,
+        "price": 6500,
+        "isPromotion": false
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6f4",
+        "id": 11,
+        "name": "PIZZA DE JAMON CRUDO",
+        "description": "Salsa de Tomate, Quezo Muzzarella, Jamon Crudo, Rúcula, Aceite de Oliva, Morrones y Aceitunas Verdes.",
+        "imageFileName": "img_566176_20240318021826.jpg",
+        "stock": 0,
+        "price": 8000,
+        "isPromotion": false
+    },
+    {
+        "_id": "65f7a335ac9e84450cd2e6f5",
+        "id": 12,
+        "name": "PIZZA DE MUZARELLA",
+        "description": "Salsa de Tomate, Quezo Muzzarella y Orégano",
+        "imageFileName": "img_563748_20240318021835.jpg",
+        "stock": 0,
+        "price": 6500,
+        "isPromotion": true
+    }
+]
