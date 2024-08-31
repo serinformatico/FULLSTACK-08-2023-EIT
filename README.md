@@ -34,15 +34,7 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
     ``` sh
     cd FULLSTACK-08-2023-EIT
     ```
-4. Instala las dependencias del proyecto:
-    ``` sh
-    npm install
-    ```
-5. Inicia el servidor en modo desarrollo:
-    ``` sh
-    npm run dev
-    ```
-6. Abre el proyecto en Visual Studio Code:
+4. Abre el proyecto en Visual Studio Code:
     ``` sh
     code .
     ```
